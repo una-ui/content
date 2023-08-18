@@ -5,14 +5,10 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     // https://content.nuxtjs.org
     '@nuxt/content',
-    // https://pinceau.dev
-    'pinceau/nuxt'
+    '@nexvelt/ui-nuxt',
   ],
   content: {
     documentDriven: true
-  },
-  pinceau: {
-    studio: true
   },
   typescript: {
     includeWorkspace: true
