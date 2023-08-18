@@ -2,11 +2,7 @@ import { field } from '@nuxthq/studio/theme'
 
 export default defineNuxtSchema({
   appConfig: {
-    /**
-     * myTheme configuration.
-     * @studio-icon carbon:blog
-    */
-    myTheme: {
+    unaContent: {
       title: field({
         type: 'string',
         description: 'Website title, used as header default title and meta title.',

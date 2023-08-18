@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  extends: ['my-theme'],
+  extends: ['@una-ui/content'],
   typescript: {
     includeWorkspace: true
   }

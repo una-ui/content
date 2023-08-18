@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  myTheme: {
-    name: 'My Nuxt Theme'
+  unaContent: {
+    name: 'Welcome to Una UI',
   }
 })

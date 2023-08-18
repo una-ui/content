@@ -1,8 +1,8 @@
 {
-  "name": "my-theme-starter",
+  "name": "una-content-starter",
   "private": true,
   "dependencies": {
-    "my-theme": "0.0.1"
+    "@una-ui/content": "0.0.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
