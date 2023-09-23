@@ -1,5 +1,5 @@
 {
-  "extends": ["@nuxtjs"],
+  "extends": ["@nuxtjs", "@una-ui/nuxt"],
   "lockFileMaintenance": {
     "enabled": true
   }
