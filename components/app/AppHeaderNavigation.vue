@@ -10,6 +10,7 @@ const { navigation } = useContent()
       :to="item._path"
       :label="item.title"
       btn="text-gray square hover:text-primary"
+      active-class="text-primary"
       size="sm"
       :una="{
         btn: 'font-normal',
