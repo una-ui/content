@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<EllipsisProps>(), {
   top: '0',
   left: '0',
   blur: '300',
-  opacity: '100',
+  opacity: '1',
   radius: '50%',
 })
 </script>
@@ -33,6 +33,7 @@ const props = withDefaults(defineProps<EllipsisProps>(), {
     }"
   >
     <div
+      v-bind="$attrs"
       class="h-full w-full from-primary to-primary-200 bg-gradient-to-r"
       :style="{
         borderRadius: props.radius,
