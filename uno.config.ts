@@ -9,7 +9,6 @@ import {
 import presetUna from '@una-ui/preset'
 
 export default {
-  preflight: false,
   presets: [
     presetUno(),
     presetAttributify(),
