@@ -15,4 +15,8 @@ export interface contentConfig {
     contributors?: boolean
   }
   layout?: string
+  header?: {
+    title?: string
+    logo?: boolean
+  }
 }

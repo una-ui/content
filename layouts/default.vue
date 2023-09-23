@@ -3,14 +3,8 @@ const location = Math.floor(Math.random() * 80) + 10
 </script>
 
 <template>
-  <div class="relative min-h-screen overflow-x-hidden bg-base">
-    <AppHeader />
-
-    <div n="container">
-      <slot />
-    </div>
-
-    <AppFooter />
+  <div>
+    <slot />
 
     <Ellipsis
       :top="`${location}%`"

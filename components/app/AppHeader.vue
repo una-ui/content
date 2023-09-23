@@ -1,14 +1,23 @@
+<script lang="ts" setup>
+const { header } = useAppConfig().una.content
+const { layout } = useRouter().currentRoute.value.meta
+</script>
+
 <template>
-  <header class="z-10 bg-base">
-    <!-- border-b border-gray/20  -->
+  <header
+    class="z-10 bg-base"
+    :class="{
+      'border-b border-gray/20': layout !== 'page',
+    }"
+  >
     <nav
       n="container"
       class="flex items-center justify-between gap-x-3 py-4"
     >
       <div class="flex items-center gap-x-12 lg:flex-1">
         <NLink to="/" class="flex items-center p-1.5 -m-1.5">
-          <AppLogo class="h-9 w-auto" />
-          <span class="ml-3 text-lg font-bold">Una UI</span>
+          <AppLogo v-if="header?.logo" class="h-9 w-auto" />
+          <span v-if="header?.title" class="ml-3 text-lg font-bold">{{ header.title }}</span>
         </NLink>
 
         <NButton

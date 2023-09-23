@@ -24,6 +24,10 @@ export default defineAppConfig({
         contributors: false,
       },
       layout: 'default',
+      header: {
+        title: 'Una UI',
+        logo: true,
+      },
     },
   },
 })
