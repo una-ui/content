@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 // setup header
+useSetupPageHeader()
 </script>
 
 <template>
