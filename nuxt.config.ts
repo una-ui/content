@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nexvelt/ui-nuxt',
+    '@una-ui/nuxt',
   ],
   content: {
     documentDriven: true,
