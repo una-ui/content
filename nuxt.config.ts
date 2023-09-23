@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@una-ui/nuxt',
   ],
+  devtools: { enabled: true },
   content: {
     documentDriven: true,
   },
