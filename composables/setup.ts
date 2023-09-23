@@ -10,7 +10,7 @@ export function useSetupPageHeader() {
       { property: 'og:title', content: appInfo.title },
       { property: 'og:description', content: appInfo.description },
       { property: 'og:site_name', content: appInfo.title },
-      { property: 'og:image', content: appInfo.image },
+      { property: 'og:image', content: appInfo.ogImage },
     ],
     titleTemplate: (title) => {
       let titleTemplate = title ?? ''
