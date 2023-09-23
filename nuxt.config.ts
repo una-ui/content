@@ -1,13 +1,12 @@
 export default defineNuxtConfig({
   modules: [
-    '@nuxthq/studio',
     '@nuxt/content',
     '@nexvelt/ui-nuxt',
   ],
   content: {
-    documentDriven: true
+    documentDriven: true,
   },
   typescript: {
-    includeWorkspace: true
-  }
+    includeWorkspace: true,
+  },
 })

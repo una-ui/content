@@ -2,7 +2,7 @@
   "name": "@una-ui/content",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.7.6",
   "description": "A Nuxt Content Theme built with UNA UI",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
   "license": "MIT",
@@ -14,38 +14,32 @@
   },
   "bugs": "https://github.com/una-ui/content/issues",
   "keywords": [
+    "una-ui",
     "nuxt-content",
     "nuxt-theme",
     "theme"
   ],
   "main": "./nuxt.config.ts",
-  "files": [
-    "nuxt.config.ts",
-    "layouts",
-    "components",
-    "app.vue"
-  ],
   "scripts": {
-    "dev": "nuxi dev .starters/default",
-    "build": "nuxi build .starters/default",
-    "generate": "nuxi generate .starters/default",
-    "preview": "nuxi preview .starters/default",
-    "prepare": "nuxi prepare && nuxi prepare .starters/default",
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
     "postinstall": "npx simple-git-hooks",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@nuxt/content": "^2.7.2",
-    "@nuxthq/studio": "^0.13.4"
+    "@nuxt/content": "^2.8.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.40.2",
-    "@nexvelt/ui-nuxt": "npm:@nexvelt/ui-nuxt-edge@latest",
-    "@unocss/eslint-config": "^0.55.1",
-    "eslint": "^8.47.0",
-    "nuxt": "^3.6.5",
+    "@antfu/eslint-config": "^0.40.3",
+    "@una-ui/nuxt": "npm:@una-ui/nuxt-edge@latest",
+    "@unocss/eslint-config": "^0.55.7",
+    "eslint": "^8.50.0",
+    "lint-staged": "^14.0.1",
+    "nuxt": "^3.7.3",
     "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
