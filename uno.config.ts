@@ -9,6 +9,11 @@ import {
 import presetUna from '@una-ui/preset'
 
 export default {
+  shortcuts: [
+    {
+      'n-container': 'container lg:px-8 mx-auto px-4 sm:px-6',
+    },
+  ],
   presets: [
     presetUno(),
     presetAttributify(),
