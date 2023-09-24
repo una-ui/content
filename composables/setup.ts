@@ -11,6 +11,7 @@ export function useSetupPageHeader() {
       { property: 'og:description', content: appInfo.description },
       { property: 'og:site_name', content: appInfo.title },
       { property: 'og:image', content: appInfo.ogImage },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     titleTemplate: (title) => {
       let titleTemplate = title ?? ''
