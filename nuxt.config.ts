@@ -6,6 +6,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   content: {
     documentDriven: true,
+    highlight: {
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark',
+      },
+    },
   },
   typescript: {
     includeWorkspace: true,
