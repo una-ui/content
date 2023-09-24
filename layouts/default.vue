@@ -11,7 +11,7 @@ const location = Math.floor(Math.random() * 80) + 10
       :left="`${location}%`"
       height="10%"
       width="50%"
-      opacity="20"
+      opacity=".5"
       blur="200"
       rotate="5"
     />
