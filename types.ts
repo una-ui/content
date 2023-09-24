@@ -18,5 +18,6 @@ export interface contentConfig {
   header?: {
     title?: string
     logo?: boolean
+    exclude?: string[]
   }
 }
