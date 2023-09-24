@@ -1,3 +1,7 @@
+import { createResolver } from '@nuxt/kit'
+
+const { resolve } = createResolver(import.meta.url)
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
@@ -16,4 +20,7 @@ export default defineNuxtConfig({
   typescript: {
     includeWorkspace: true,
   },
+  css: [
+    resolve('./styles/main.css'),
+  ],
 })

@@ -1,0 +1,5 @@
+:root {
+  .github-light_github-dark {
+    background: var(--c-muted) !important;
+  }
+}
