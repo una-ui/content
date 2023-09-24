@@ -9,10 +9,10 @@ const location = Math.floor(Math.random() * 80) + 10
     <Ellipsis
       :top="`${location}%`"
       :left="`${location}%`"
-      height="10%"
-      width="50%"
-      opacity=".5"
-      blur="200"
+      height="35%"
+      width="35%"
+      opacity=".1"
+      blur="150"
       rotate="5"
     />
   </div>
