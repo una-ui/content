@@ -1,6 +1,7 @@
 import {
   presetAttributify,
   presetIcons,
+  presetTypography,
   presetUno,
   transformerDirectives,
   transformerVariantGroup,
@@ -14,9 +15,11 @@ export default {
       'n-container': 'container lg:px-8 mx-auto px-4 sm:px-6',
     },
   ],
+
   presets: [
     presetUno(),
     presetAttributify(),
+    presetTypography(),
     presetIcons({
       scale: 1.2,
       extraProperties: {
@@ -26,8 +29,13 @@ export default {
     }),
     presetUna(),
   ],
+
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
+  ],
+
+  css: [
+    '~/assets/css/main.css',
   ],
 }
