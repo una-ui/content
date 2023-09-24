@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 const { header } = useAppConfig().una.content
-const { layout } = useRouter().currentRoute.value.meta
+const { currentRoute } = useRouter()
 </script>
 
 <template>
   <header
-    class="z-10 bg-base"
+    class="sticky top-0 z-10 bg-white/50 backdrop-blur-md dark:bg-gray-950/50"
     :class="{
-      'border-b border-gray/20': layout !== 'page',
+      'border-b border-gray/20': currentRoute.meta.layout !== 'page',
     }"
   >
     <nav
