@@ -17,6 +17,18 @@ export default defineNuxtConfig({
       },
     },
   },
+  components: [
+    {
+      prefix: '',
+      path: resolve('./components/app'),
+      global: true,
+    },
+    {
+      prefix: '',
+      path: resolve('./components/docs'),
+      global: true,
+    },
+  ],
   typescript: {
     includeWorkspace: true,
   },
