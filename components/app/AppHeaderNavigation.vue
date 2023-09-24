@@ -6,6 +6,7 @@ const excluded = computed(() => {
   return header?.exclude || []
 })
 
+// filter excluded navigation items
 const filteredNavigation = computed(() => {
   return navigation.value.filter((item: any) => {
     return !excluded.value.includes(item._path)
@@ -23,8 +24,9 @@ const filteredNavigation = computed(() => {
         :to="item._path"
         :label="item.title"
         btn="~ square"
-        inactive-class="btn-(text-gray hover:text-primary) font-normal"
-        active-class="text-primary font-medium"
+        inactive-class="btn-(text-gray hover:text-primary)"
+        active-class="text-primary"
+        class="font-normal"
         size="sm"
       />
       <!--
