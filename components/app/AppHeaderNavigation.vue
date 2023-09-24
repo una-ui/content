@@ -11,12 +11,10 @@ const { navigation } = useContent()
       <NButton
         :to="item._path"
         :label="item.title"
-        btn="text-gray square hover:text-primary"
-        active-class="text-primary"
+        btn="~ square"
+        inactive-class="btn-(text-gray hover:text-primary) font-normal"
+        active-class="text-primary font-bold"
         size="sm"
-        :una="{
-          btn: 'font-normal',
-        }"
       />
 
       <!--
