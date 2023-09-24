@@ -17,6 +17,7 @@ const props = withDefaults(defineProps<EllipsisProps>(), {
   blur: '300',
   opacity: '1',
   radius: '50%',
+  rotate: '0',
 })
 </script>
 
@@ -30,6 +31,7 @@ const props = withDefaults(defineProps<EllipsisProps>(), {
       left: props.left,
       opacity: props.opacity,
       filter: `blur(${props.blur}px)`,
+      transform: `rotate(${props.rotate}deg)`,
     }"
   >
     <div
