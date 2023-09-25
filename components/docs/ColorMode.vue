@@ -10,9 +10,8 @@ function toggleDark() {
     btn="text-gray square"
     aria-label="Toggle dark mode"
     icon
-    label="i-heroicons-sun-20-solid dark:i-heroicons-moon-20-solid"
-    class="opacity-70 hover:opacity-100"
-    size="13px"
+    label="i-tabler-sun dark:i-tabler-moon-stars"
+    class="opacity-70 -rotate-15 hover:opacity-100"
     @click="toggleDark()"
   />
 </template>

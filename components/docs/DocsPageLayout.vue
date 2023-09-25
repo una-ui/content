@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <article class="col-span-5 prose lg:col-span-3">
+    <article class="col-span-5 prose lg:col-span-3 lg:px-6">
       <slot />
     </article>
 

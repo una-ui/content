@@ -36,7 +36,7 @@ const { currentRoute } = useRouter()
           </template>
         </NButton>
       </div>
-      <div class="flex items-center justify-end gap-x-4 lg:flex-1">
+      <div class="flex items-center justify-end gap-x-3 lg:flex-1">
         <AppHeaderNavigation />
 
         <div class="mx-1.5 hidden h-7 border-r-0.5 border-gray/20 lg:flex" />
@@ -49,7 +49,8 @@ const { currentRoute } = useRouter()
           label="i-heroicons-magnifying-glass-20-solid"
           aria-label="Toggle search"
         />
-        <ColorMode />
+
+        <ColorMode class="-ml-1.5" />
         <NThemeSwitcher class="!ml-0" />
         <NButton
           icon

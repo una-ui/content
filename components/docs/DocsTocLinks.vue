@@ -38,20 +38,23 @@ function childMove(id: string) {
 </script>
 
 <template>
-  <ul content="docs-toc-links">
-    <!-- :class="[`depth-${link.depth}`]" -->
+  <ol content="docs-toc-links">
     <li
       v-for="link in links"
       :key="link.text"
-      :class="{ 'border-primary border-l-1 ': activeHeadings.includes(link.id) }"
-      class="truncate py-1 pl-4"
+      :class="{ 'border-l border-primary-active -ml-0.25': activeHeadings.includes(link.id) && link.depth === 2 }"
+      class="py-1"
     >
       <NLink
         :to="`#${link.id}`"
-        :class="{ 'text-primary': activeHeadings.includes(link.id) }"
+        :class="[
+          { 'text-primary': activeHeadings.includes(link.id) },
+          [link.depth === 2 ? 'pl-4' : 'pl-8'],
+        ]"
+        class="whitespace-nowrap"
         @click.prevent="scrollToHeading(link.id)"
       >
-        {{ link.text }} sdffsffssfdfdfssssdffsffssfdfdfssssdffsffssfdfdfssssdffsffssfdfdfssssdffsffssfdfdfsss
+        {{ link.text }}
       </NLink>
       <DocsTocLinks
         v-if="link.children"
@@ -59,5 +62,5 @@ function childMove(id: string) {
         @move="childMove($event)"
       />
     </li>
-  </ul>
+  </ol>
 </template>

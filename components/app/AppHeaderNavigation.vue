@@ -24,7 +24,7 @@ const filteredNavigation = computed(() => {
       btn="~ square"
       inactive-class="btn-(text-gray hover:text-primary)"
       active-class="text-primary"
-      class="whitespace-nowrap font-normal"
+      class="whitespace-nowrap font-medium"
       size="sm"
     />
     <!--
