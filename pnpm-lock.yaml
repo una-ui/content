@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@iconify-json/carbon':
-    specifier: ^1.1.21
-    version: 1.1.21
+  '@iconify-json/ri':
+    specifier: ^1.1.12
+    version: 1.1.12
   '@nuxt/content':
     specifier: ^2.8.2
     version: 2.8.2(vue@3.3.4)
@@ -974,17 +974,17 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/carbon@1.1.21:
-    resolution: {integrity: sha512-bK2cMVM4noBU+FGlay433flpXLRzQu0ED095iAnoO6ka3yb4uz0lvb8acpN5gthyGLJ89C4HpfIbQZLQnMKQww==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: false
-
   /@iconify-json/heroicons@1.1.12:
     resolution: {integrity: sha512-9tsn/xUU+HX56OngEDRTej4LzVm2qcMVLvEJ+q+1ZJBO4sjMDxycmbHq16HGl1LOeVG21fq4jNZHslVveVCwSQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
+
+  /@iconify-json/ri@1.1.12:
+    resolution: {integrity: sha512-s5VsyMWYuUuTB5bATJRoDQKGqo6W0dsxvOBrJI/P2H9QI7IAaAWl8zHxseSjoUGG6AwZwWwDMW9YPULPt+vA6w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
 
   /@iconify-json/tabler@1.1.91:
     resolution: {integrity: sha512-ZpLOOEeUluYZdA79hEjA9tElWYQM5i9W9jpDgr02tnYVPB42WQQKnrTOaeW6jL7F+VV4vUfYI0z0D9+h0mDKkg==}
