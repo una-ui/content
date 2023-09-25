@@ -3,7 +3,9 @@
 
 <template>
   <div>
-    <slot />
+    <DocsPageLayout>
+      <slot />
+    </DocsPageLayout>
 
     <Ellipsis
       width="20%"

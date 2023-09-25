@@ -4,9 +4,11 @@ const location = Math.floor(Math.random() * 80) + 10
 
 <template>
   <div>
-    <slot />
+    <DocsPageLayout>
+      <slot />
+    </DocsPageLayout>
 
-    <Ellipsis
+    <!-- <Ellipsis
       :top="`${location}%`"
       :left="`${location}%`"
       height="35%"
@@ -14,6 +16,6 @@ const location = Math.floor(Math.random() * 80) + 10
       opacity=".1"
       blur="150"
       rotate="5"
-    />
+    /> -->
   </div>
 </template>

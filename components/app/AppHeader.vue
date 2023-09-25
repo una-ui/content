@@ -5,13 +5,13 @@ const { currentRoute } = useRouter()
 
 <template>
   <header
-    class="sticky top-0 z-10 bg-white/50 backdrop-blur-md dark:bg-gray-950/50"
+    content="header"
     :class="{
-      'border-b border-gray/20': currentRoute.meta.layout !== 'page',
+      'border-b': currentRoute.meta.layout !== 'page',
     }"
   >
     <nav
-      n="container"
+      content="container"
       class="flex items-center justify-between gap-x-3 py-4"
     >
       <div class="flex items-center gap-x-12 lg:flex-1">

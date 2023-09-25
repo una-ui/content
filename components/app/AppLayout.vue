@@ -1,11 +1,12 @@
 <template>
-  <div class="relative min-h-screen overflow-x-hidden bg-base">
+  <div class="relative min-h-screen">
     <AppHeader />
 
-    <div n="container">
+    <main>
       <slot />
-    </div>
+    </main>
 
+    <!-- should have dynamic height -->
     <AppFooter />
   </div>
 </template>
