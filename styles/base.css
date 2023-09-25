@@ -20,7 +20,6 @@
 
 html {
   line-height: .2;
-  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   color: var(--c-gray-700);
 }
@@ -33,10 +32,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-  display: block;
 }
 
 /**
@@ -89,20 +84,4 @@ video {
 
 table {
   border-collapse: collapse;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-p {
-  overflow-wrap: break-word;
 }
