@@ -7,6 +7,7 @@ export interface contentConfig {
     [key: string]: {
       url: string
       icon: string
+      class?: string
     }
   }
   github?: {

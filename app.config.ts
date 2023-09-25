@@ -9,14 +9,15 @@ export default defineAppConfig({
       ogImage: '',
       url: 'https://unaui.com',
       socials: {
-        twitter: {
-          url: 'https://twitter.com/una_ui',
-          icon: 'i-carbon-logo-twitter',
-        },
         github: {
           url: 'https://github.com/una-ui/una-ui',
-          icon: 'i-carbon-logo-github',
+          icon: 'i-ri-github-fill',
         },
+      },
+      twitter: {
+        url: 'https://twitter.com/una_ui',
+        icon: 'i-ri-twitter-x-fill',
+        class: 'text-xs',
       },
       github: {
         root: 'content',
