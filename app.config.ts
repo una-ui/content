@@ -13,11 +13,11 @@ export default defineAppConfig({
           url: 'https://github.com/una-ui/una-ui',
           icon: 'i-ri-github-fill',
         },
-      },
-      twitter: {
-        url: 'https://twitter.com/una_ui',
-        icon: 'i-ri-twitter-x-fill',
-        class: 'text-xs',
+        twitter: {
+          url: 'https://twitter.com/una_ui',
+          icon: 'i-ri-twitter-x-fill',
+          class: 'text-xs',
+        },
       },
       github: {
         root: 'content',
