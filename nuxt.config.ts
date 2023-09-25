@@ -33,7 +33,6 @@ export default defineNuxtConfig({
     includeWorkspace: true,
   },
   css: [
-    resolve('./styles/main.css'),
-    resolve('./styles/override.css'),
+    resolve('./styles/index.css'),
   ],
 })

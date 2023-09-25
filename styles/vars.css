@@ -1,11 +1,13 @@
 :root {
-  .github-light_github-dark {
-    background: var(--c-muted) !important;
-  }
-
   --c-border: rgb(var(--una-gray-200));
   --c-ring: rgb(var(--una-gray-200));
   --c-divider: rgb(var(--una-gray-200));
+
+  --un-prose-headings: rgb(var(--una-primary));
+  --un-prose-hr: var(--c-divider);
+  --un-prose-links: var(--c-brand);
+  --un-prose-code: var(--c-brand);
+  --un-prose-borders: var(--c-border);
 }
 
 .dark {

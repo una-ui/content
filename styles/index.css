@@ -1,0 +1,10 @@
+@import './base.css';
+@import './vars.css';
+
+.github-light_github-dark {
+  background: var(--c-muted) !important;
+}
+
+.prose {
+  @apply !max-w-none;
+}
