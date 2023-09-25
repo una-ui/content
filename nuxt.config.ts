@@ -34,5 +34,6 @@ export default defineNuxtConfig({
   },
   css: [
     resolve('./styles/main.css'),
+    resolve('./styles/override.css'),
   ],
 })
