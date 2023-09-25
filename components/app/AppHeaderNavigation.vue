@@ -16,23 +16,20 @@ const filteredNavigation = computed(() => {
 
 <template>
   <div class="hidden gap-x-4 lg:flex">
-    <template
+    <NButton
       v-for="item in filteredNavigation"
       :key="item._id"
-    >
-      <NButton
-        :to="item._path"
-        :label="item.title"
-        btn="~ square"
-        inactive-class="btn-(text-gray hover:text-primary)"
-        active-class="text-primary"
-        class="font-normal"
-        size="sm"
-      />
-      <!--
+      :to="item._path"
+      :label="item.title"
+      btn="~ square"
+      inactive-class="btn-(text-gray hover:text-primary)"
+      active-class="text-primary"
+      class="whitespace-nowrap font-normal"
+      size="sm"
+    />
+    <!--
         TODO: add dropdown to item children
         :trailing="item.children ? 'i-heroicons-chevron-down-20-solid text-sm' : ''"
        -->
-    </template>
   </div>
 </template>
