@@ -19,10 +19,10 @@
 }
 
 html {
-  line-height: .2;
   -webkit-text-size-adjust: 100%;
-  color: var(--c-gray-700);
+  color: var(--c-gray-600);
 }
+
 
 body {
   margin: 0;
@@ -34,7 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/**
+/* *
  * Avoid 300ms click delay on touch devices that support the `touch-action`
  * CSS property.
  *
@@ -85,3 +85,13 @@ video {
 table {
   border-collapse: collapse;
 }
+
+/* overrides */
+.alert lpre,code {
+  background: rgba(var(--una-primary), 0.1);
+  padding: 0.1rem 0.5rem;
+  color: rgb(var(--una-primary));
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+}
+
