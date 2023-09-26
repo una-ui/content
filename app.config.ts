@@ -1,6 +1,5 @@
 import type { contentConfig } from './types'
 
-// @unocss-include
 export default defineAppConfig({
   una: {
     content: <contentConfig> {
