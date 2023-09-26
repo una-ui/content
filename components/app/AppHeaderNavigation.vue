@@ -9,7 +9,7 @@ const excluded = computed(() => {
 // filter excluded navigation items
 const filteredNavigation = computed(() => {
   return navigation.value.filter((item: any) => {
-    return !excluded.value.includes(item._path)
+    return !excluded.value.includes(item._path) && item.children
   })
 })
 </script>
@@ -20,11 +20,11 @@ const filteredNavigation = computed(() => {
       v-for="item in filteredNavigation"
       :key="item._id"
       :to="item._path"
-      :label="item.title"
+      :label="item._path.replace('/', '')"
       btn="~ square"
-      inactive-class="btn-(text-gray hover:text-primary)"
-      active-class="text-primary"
-      class="whitespace-nowrap font-medium"
+      inactive-class="btn-(text-gray)"
+      active-class="btn-(text-primary)"
+      class="whitespace-nowrap font-medium capitalize"
       size="sm"
     />
     <!--
