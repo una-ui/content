@@ -14,12 +14,15 @@
   },
   "bugs": "https://github.com/una-ui/content/issues",
   "keywords": [
+    "markdown",
+    "docs",
+    "vue",
+    "nuxt",
     "una-ui",
     "nuxt-content",
     "nuxt-theme",
     "theme"
   ],
-  "main": "./nuxt.config.ts",
   "files": [
     "app",
     "app.vue",
