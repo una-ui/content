@@ -130,7 +130,7 @@ function handleNavigate(delta: -1 | 1) {
               <span class="shrink-0 self-center">
                 {{ item.title }}
               </span>
-              <span class="ml-2 self-center truncate text-xs text-muted" v-html="getHighlightedContent(item.content)" />
+              <span class="ml-2 self-center truncate text-muted text-xs" v-html="getHighlightedContent(item.content)" />
             </NuxtLink>
           </div>
 
