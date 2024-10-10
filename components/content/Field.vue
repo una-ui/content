@@ -14,7 +14,7 @@ const { fieldRequiredText } = useConfig().value.main
   <div class="[&:not(:first-child)]:mt-4 [&:not(:first-child)]:pt-4">
     <div class="mb-2">
       <div class="flex items-center gap-2">
-        <span class="text-md font-bold text-primary">
+        <span class="font-bold text-md text-primary">
           {{ name }}
         </span>
         <span v-if="required" class="text-muted text-sm font-mono">

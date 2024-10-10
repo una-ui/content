@@ -1,18 +1,15 @@
 export default defineAppConfig({
   unaContent: {
-    site: {
-      name: 'UnaUI Content',
-      description: 'Craft visually appealing content effortlessly using Una UI',
-      ogImage: '/hero.png',
-    },
     header: {
-      title: 'Una-UI',
-      showTitle: true,
-      logo: {
-        light: '/logo.svg',
-        dark: '/logo-dark.svg',
-      },
       darkModeToggle: true,
+      showLoadingIndicator: true,
+      showLogo: true,
+      title: '',
+      showTitle: false,
+      logo: {
+        light: '', // eg. '/logo.svg'
+        dark: '', // eg. '/logo-dark.svg'
+      },
       nav: [{
         title: 'Docs',
         links: [{

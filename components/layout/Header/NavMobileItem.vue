@@ -14,7 +14,7 @@ watch(isOpen, (v) => {
 <template>
   <template v-if="item.links">
     <UiCollapsible v-model:open="isOpen">
-      <UiCollapsibleTrigger class="w-full p-2 text-left">
+      <UiCollapsibleTrigger class="w-full text-left p-2">
         <div class="flex w-full gap-1">
           {{ item.title }}
           <Icon
