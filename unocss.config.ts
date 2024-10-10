@@ -8,5 +8,13 @@ export default defineConfig({
     extractorMdc(),
   ],
 
+  content: {
+    pipeline: {
+      include: [
+        '**/*.{yml,yaml,ts,tsx,vue,md}',
+      ],
+    },
+  },
+
   ...una,
 })

@@ -1,4 +1,3 @@
-// @unocss-include
 export default defineAppConfig({
   unaContent: {
     site: {
@@ -19,7 +18,7 @@ export default defineAppConfig({
         links: [{
           title: 'Getting Started',
           to: '/getting-started',
-          description: 'Start building your document with una-content-nuxt',
+          description: 'Start building your document with una-content',
         }, {
           title: 'API',
           to: '/api',
@@ -56,7 +55,7 @@ export default defineAppConfig({
       }],
       links: [{
         icon: 'lucide:github',
-        to: 'https://github.com/ZTL-UwU/una-content-nuxt',
+        to: 'https://github.com/una-ui/content',
         target: '_blank',
       }],
     },
@@ -116,10 +115,10 @@ export default defineAppConfig({
       credits: 'Copyright © 2024',
       links: [
         {
-          label: 'i-lucide-github',
+          label: 'i-check',
           icon: true,
           square: true,
-          to: 'https://github.com/ZTL-UwU/una-content-nuxt',
+          to: 'https://github.com/una-ui/content',
           target: '_blank',
         },
       ],
@@ -130,12 +129,12 @@ export default defineAppConfig({
       links: [{
         title: 'Star on GitHub',
         icon: 'lucide:star',
-        to: 'https://github.com/ZTL-UwU/una-content-nuxt',
+        to: 'https://github.com/una-ui/content',
         target: '_blank',
       }, {
         title: 'Create Issues',
         icon: 'lucide:circle-dot',
-        to: 'https://github.com/ZTL-UwU/una-content-nuxt/issues',
+        to: 'https://github.com/una-ui/content/issues',
         target: '_blank',
       }],
     },
