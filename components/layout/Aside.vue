@@ -27,15 +27,15 @@ const path = computed(() => useRoute().path)
     <LayoutSearchButton v-if="config.search.inAside" />
     <ul v-if="config.aside.useLevel" class="border-b mb-1 pb-4">
       <li v-for="link in navigation" :key="link.id">
-        <NuxtLink
+        <NLink
           :to="link._path" class="mb-1 flex w-full gap-2 rounded-md px-3 py-2 transition-all hover:bg-muted"
           :class="[
             path.startsWith(link._path) && 'bg-muted text-primary hover:bg-muted font-semibold',
           ]"
         >
-          <NIcon v-if="link.icon" :name="link.icon" class="self-center" />
-          {{ link.icon }}
-        </NuxtLink>
+          <Icon v-if="link.icon" :name="link.icon" class="self-center" />
+          {{ link.title }}
+        </NLink>
       </li>
     </ul>
     <LayoutAsideTree :links="tree" :level="0" class="px-3" :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']" />

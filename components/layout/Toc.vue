@@ -41,23 +41,23 @@ const isOpen = ref(false)
         </NuxtLink>
       </div>
     </UiScrollArea>
-    <UiCollapsible
+    <NCollapsible
       v-else
       v-model:open="isOpen"
       class="block w-full text-sm lg:hidden"
       :class="{ 'border-b': border }"
     >
-      <UiCollapsibleTrigger class="flex w-full px-4 py-3 text-left font-medium">
+      <NCollapsibleTrigger class="flex w-full px-4 py-3 text-left font-medium">
         {{ title }}
         <Icon
           name="lucide:chevron-right"
           class="ml-auto self-center transition-all"
           :class="[isOpen && 'rotate-90']"
         />
-      </UiCollapsibleTrigger>
-      <UiCollapsibleContent>
+      </NCollapsibleTrigger>
+      <NCollapsibleContent>
         <LayoutTocTree :links="toc.links" :level="0" class="border-l pl-4 text-sm mx-4 mb-3" />
-      </UiCollapsibleContent>
-    </UiCollapsible>
+      </NCollapsibleContent>
+    </NCollapsible>
   </template>
 </template>

@@ -51,7 +51,7 @@ export default defineAppConfig({
         target: '_self',
       }],
       links: [{
-        icon: 'lucide:github',
+        icon: 'i-lucide-github',
         to: 'https://github.com/una-ui/content',
         target: '_blank',
       }],

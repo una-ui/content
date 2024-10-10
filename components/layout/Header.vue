@@ -15,22 +15,22 @@ const config = useConfig()
       <LayoutMobileNav />
       <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
-      <div class="flex flex-1 gap-2 justify-end">
+      <div class="flex flex-1 gap-1 justify-end">
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'input'" />
-        <div class="flex space-x-2">
+        <div class="flex space-x-1">
           <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
-          <DarkModeToggle v-if="config.header.darkModeToggle" />
-          <NThemeSwitcher v-if="config.theme.customizable" />
-          <NuxtLink
+          <NButton
             v-for="(link, i) in config.header.links"
             :key="i"
             :to="link?.to"
             :target="link?.target"
-          >
-            <UiButton variant="ghost" size="icon" class="flex gap-2">
-              <SmartIcon v-if="link?.icon" :name="link.icon" :size="18" />
-            </UiButton>
-          </NuxtLink>
+            btn="ghost-gray"
+            square
+            icon
+            :label="link.icon"
+          />
+          <DarkModeToggle v-if="config.header.darkModeToggle" />
+          <NThemeSwitcher v-if="config.theme.customizable" />
         </div>
       </div>
     </div>
