@@ -39,6 +39,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "reset": "pnpm store prune && rm -rf .nuxt dist node_modules pnpm-lock.yaml && pnpm install",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
