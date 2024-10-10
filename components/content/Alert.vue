@@ -48,7 +48,7 @@ async function alertClick() {
     </UiAlertTitle>
     <UiAlertDescription>
       <div class="flex flex-row space-x-2">
-        <SmartIcon v-if="icon && !title" :name="icon" :size="16" class="mb-[2px] min-w-5 self-center" />
+        <SmartIcon v-if="icon && !title" :name="icon" :size="16" class="self-center mb-[2px] min-w-5" />
         <span :class="[to && 'pr-3']">
           <slot />
         </span>
