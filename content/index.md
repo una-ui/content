@@ -8,14 +8,14 @@ navigation: false
 announcement:
   title: 'Release v0.5.7'
   icon: '🎉'
-  to: https://github.com/ZTL-UwU/una-content-nuxt/releases
+  to: https://github.com/una-ui/content/releases
   target: _blank
 actions:
   - label: Get Started
     to: /getting-started
   - label: GitHub
     btn: 'solid-gray'
-    to: https://github.com/ZTL-UwU/una-content-nuxt
+    to: https://github.com/una-ui/content
     leading: 'i-lucide-github'
 ---
 

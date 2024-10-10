@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     '@una-ui/nuxt',
     '@nuxt/content',
     '@nuxt/image',
+    '@nuxt/icon',
   ],
   components: {
     dirs: [

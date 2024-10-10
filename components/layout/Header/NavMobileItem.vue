@@ -13,8 +13,8 @@ watch(isOpen, (v) => {
 
 <template>
   <template v-if="item.links">
-    <UiCollapsible v-model:open="isOpen">
-      <UiCollapsibleTrigger class="w-full p-2 text-left">
+    <NCollapsible v-model:open="isOpen">
+      <NCollapsibleTrigger class="w-full text-left p-2">
         <div class="flex w-full gap-1">
           {{ item.title }}
           <Icon
@@ -23,8 +23,8 @@ watch(isOpen, (v) => {
             class="ml-auto self-center"
           />
         </div>
-      </UiCollapsibleTrigger>
-      <UiCollapsibleContent>
+      </NCollapsibleTrigger>
+      <NCollapsibleContent>
         <ul class="pl-2">
           <li v-for="link in item.links" :key="link.title">
             <NuxtLink
@@ -41,8 +41,8 @@ watch(isOpen, (v) => {
             </NuxtLink>
           </li>
         </ul>
-      </UiCollapsibleContent>
-    </UiCollapsible>
+      </NCollapsibleContent>
+    </NCollapsible>
   </template>
   <NuxtLink v-else :to="item.to" :target="item.target" class="flex w-full p-2">
     {{ item.title }}

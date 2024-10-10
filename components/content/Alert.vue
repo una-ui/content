@@ -38,7 +38,7 @@ async function alertClick() {
 
 <template>
   <UiAlert
-    class="transition-all [&:not(:first-child)]:mt-5"
+    class="[&:not(:first-child)]:mt-5 transition-all"
     :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-muted/50']"
     @click="alertClick"
   >
@@ -48,7 +48,7 @@ async function alertClick() {
     </UiAlertTitle>
     <UiAlertDescription>
       <div class="flex flex-row space-x-2">
-        <SmartIcon v-if="icon && !title" :name="icon" :size="16" class="mb-[2px] min-w-5 self-center" />
+        <SmartIcon v-if="icon && !title" :name="icon" :size="16" class="self-center mb-[2px] min-w-5" />
         <span :class="[to && 'pr-3']">
           <slot />
         </span>

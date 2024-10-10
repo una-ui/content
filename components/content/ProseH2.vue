@@ -6,7 +6,7 @@ const generate = computed(() => props.id && headings?.anchorLinks?.h2)
 </script>
 
 <template>
-  <h2 :id="id" class="border-b text-3xl font-semibold scroll-m-20 pb-2 tracking-tight transition-colors [&:not(:first-child)]:mt-10">
+  <h2 :id="id" class="border-b text-3xl font-semibold scroll-m-20 tracking-tight pb-2 transition-colors [&:not(:first-child)]:mt-10">
     <NuxtLink
       v-if="id && generate"
       :href="`#${id}`"
