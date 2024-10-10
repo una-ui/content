@@ -13,7 +13,7 @@ const { nav } = useConfig().value.header
             {{ item.title }}
           </UiNavigationMenuTrigger>
           <UiNavigationMenuContent>
-            <ul class="p-2 w-[250px]">
+            <ul class="p-2 w-250px">
               <li v-for="link in item.links" :key="link.title">
                 <NuxtLink
                   :to="link.to"

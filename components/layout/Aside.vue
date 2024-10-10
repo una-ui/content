@@ -33,7 +33,7 @@ const path = computed(() => useRoute().path)
             path.startsWith(link._path) && 'bg-muted text-primary hover:bg-muted font-semibold',
           ]"
         >
-          <Icon v-if="link.icon" :name="link.icon" class="self-center" />
+          <SmartIcon v-if="link.icon" :name="link.icon" class="self-center" />
           {{ link.title }}
         </NLink>
       </li>

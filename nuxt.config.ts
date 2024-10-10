@@ -1,9 +1,9 @@
 export default defineNuxtConfig({
   modules: [
-    '@una-ui/nuxt',
     '@nuxt/content',
     '@nuxt/image',
     '@nuxt/icon',
+    '@una-ui/nuxt',
   ],
   components: {
     dirs: [
