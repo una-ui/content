@@ -2,8 +2,8 @@
 export default defineAppConfig({
   unaContent: {
     site: {
-      name: 'una-content',
-      description: 'Beautifully designed Nuxt Content template built with shadcn-vue. Customizable. Compatible. Open Source.',
+      name: 'UnaUI Content',
+      description: 'Craft visually appealing content effortlessly using Una UI',
       ogImage: '/hero.png',
     },
     header: {
