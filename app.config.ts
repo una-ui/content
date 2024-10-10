@@ -4,12 +4,7 @@ export default defineAppConfig({
       darkModeToggle: true,
       showLoadingIndicator: true,
       showLogo: true,
-      title: '',
       showTitle: false,
-      logo: {
-        light: '', // eg. '/logo.svg'
-        dark: '', // eg. '/logo-dark.svg'
-      },
       nav: [{
         title: 'Docs',
         links: [{
@@ -50,11 +45,23 @@ export default defineAppConfig({
         to: '/getting-started/installation',
         target: '_self',
       }],
-      links: [{
-        icon: 'i-lucide-github',
-        to: 'https://github.com/una-ui/content',
-        target: '_blank',
-      }],
+      links: [
+        {
+          icon: 'i-radix-icons-github-logo',
+          to: 'https://github.com/una-ui/content',
+          target: '_blank',
+        },
+        {
+          icon: 'i-tabler-brand-x',
+          to: 'https://x.com/phojiee',
+          target: '_blank',
+        },
+        {
+          icon: 'i-tabler-brand-discord-filled',
+          to: 'https://discord.gg/gmdTPGkxRs',
+          target: '_blank',
+        },
+      ],
     },
     aside: {
       useLevel: true,
@@ -137,6 +144,7 @@ export default defineAppConfig({
     },
     search: {
       enable: true,
+      style: 'input',
       inAside: false,
     },
   },

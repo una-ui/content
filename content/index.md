@@ -6,8 +6,8 @@ navigation: false
 ::hero
 ---
 announcement:
-  title: 'Release v0.5.7'
-  icon: '🎉'
+  title: Release v0.0.1
+  icon: 🚀
   to: https://github.com/una-ui/content/releases
   target: _blank
 actions:
@@ -16,14 +16,14 @@ actions:
   - label: GitHub
     btn: 'solid-gray'
     to: https://github.com/una-ui/content
-    leading: 'i-lucide-github'
+    leading: 'i-radix-icons-github-logo'
 ---
 
 #title
-Effortless and Beautiful :br Docs Template.
+Craft visually appealing content effortlessly.
 
 #description
-Beautifully designed Nuxt Content template built with shadcn-vue. :br Customizable. Compatible. Open Source.
+Beautifully designed Nuxt Content template built with UnaUI. :br Customizable. Compatible. Open Source.
 ::
 
 <div class="border rounded-lg shadow-md">

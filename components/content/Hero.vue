@@ -12,22 +12,23 @@ defineProps<{
 
 <template>
   <section class="flex items-center gap-2 mx-auto flex-col py-8 md:py-12 md:pb-8 max-w-980px lg:py-24 lg:pb-20">
-    <NuxtLink
+    <NButton
       v-if="announcement"
       :to="announcement.to"
       :target="announcement.target"
-      class="items-center text-sm inline-flex bg-muted font-medium rounded-lg px-3 py-1"
+      rounded="lg"
+      btn="soft-accent"
     >
       <template v-if="announcement.icon">
-        <SmartIcon :name="announcement.icon" :size="16" />
+        <SmartIcon :name="announcement.icon" square="4" />
         <NSeparator class="mx-2 h-4" orientation="vertical" />
       </template>
       <span class="sm:hidden">{{ announcement.title }}</span>
       <span class="hidden sm:inline">
         {{ announcement.title }}
       </span>
-      <NIcon name="i-lucide-arrow-right" class="ml-1 size-4" />
-    </NuxtLink>
+      <NIcon name="i-lucide-arrow-right" class="ml-1" square="4" />
+    </NButton>
 
     <h1 class="font-bold text-3xl leading-tight tracking-tighter lg:leading-[1.1] text-center md:text-6xl">
       <ContentSlot :use="$slots.title" unwrap="p" />

@@ -18,12 +18,12 @@ defineProps<{
 </script>
 
 <template>
-  <section class="flex items-start gap-2 px-4 mx-auto flex-col py-8 md:py-12 md:pb-8 lg:py-12 lg:pb-10">
+  <section class="flex items-start px-4 gap-2 mx-auto flex-col py-8 md:py-12 md:pb-8 lg:py-12 lg:pb-10">
     <NuxtLink
       v-if="announcement"
       :to="announcement.to"
       :target="announcement.target"
-      class="inline-flex items-center text-sm font-medium px-0.5"
+      class="items-center text-sm inline-flex font-medium px-0.5"
     >
       <template v-if="announcement.icon">
         <SmartIcon :name="announcement.icon" :size="16" />
@@ -36,7 +36,7 @@ defineProps<{
     <h1 class="font-bold text-3xl leading-tight tracking-tighter lg:leading-[1.1] md:text-4xl">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>
-    <p class="text-lg max-w-2xl font-light text-base">
+    <p class="text-base text-lg max-w-2xl font-light">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </p>
 

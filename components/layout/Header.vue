@@ -15,23 +15,23 @@ const config = useConfig()
       <LayoutMobileNav />
       <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
-      <div class="flex flex-1 gap-1 justify-end">
+      <div class="flex flex-1 gap-0.5 justify-end">
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'input'" />
-        <div class="flex space-x-1">
-          <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
+        <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
+        <div class="inline-flex gap-0.5">
           <NButton
             v-for="(link, i) in config.header.links"
             :key="i"
-            :to="link?.to"
-            :target="link?.target"
             btn="ghost-gray"
+            class="text-base"
+            v-bind="link"
             square
             icon
             :label="link.icon"
           />
           <DarkModeToggle v-if="config.header.darkModeToggle" />
-          <NThemeSwitcher v-if="config.theme.customizable" />
         </div>
+        <NThemeSwitcher v-if="config.theme.customizable" />
       </div>
     </div>
     <div v-if="config.toc.enable && config.toc.enableInMobile" class="lg:hidden">

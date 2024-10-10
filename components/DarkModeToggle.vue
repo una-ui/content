@@ -8,6 +8,7 @@ function toggleDark() {
 <template>
   <NButton
     btn="ghost-gray"
+    class="text-base"
     square
     icon
     label="i-radix-icons-sun dark:i-radix-icons-moon"

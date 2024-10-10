@@ -14,7 +14,7 @@ const sizeClasses = {
 
 <template>
   <kbd
-    class="items-center gap-1 border inline-flex bg-muted font-medium rounded pointer-events-none h-5 select-none border-base font-sans"
+    class="items-center gap-1 border inline-flex font-medium bg-muted rounded pointer-events-none h-5 select-none border-base font-sans"
     :class="sizeClasses[size]"
   >
     <slot />

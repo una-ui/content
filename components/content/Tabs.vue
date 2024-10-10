@@ -59,7 +59,7 @@ function label(props: any) {
             v-for="(slot, i) in ($slots.default?.() ?? [])"
             :key="`${i}${label(slot.props)}`"
             :value="label(slot.props)"
-            class="flex cursor-pointer rounded-md px-3 text-muted transition-all py-1.5 duration-75"
+            class="flex cursor-pointer rounded-md text-muted transition-all px-3 py-1.5 duration-75"
             :class="[activeTabIndex === i && 'bg-muted text-primary']"
             @mousedown.left="activeTabIndex = i"
           >
