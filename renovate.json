@@ -1,6 +1,6 @@
 {
-  "extends": ["@nuxtjs", "@una-ui/nuxt"],
-  "lockFileMaintenance": {
-    "enabled": true
-  }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ]
 }
