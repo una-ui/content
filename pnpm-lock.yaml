@@ -59,7 +59,7 @@ importers:
         version: 3.8.0(@typescript-eslint/utils@8.9.0(eslint@9.12.0(jiti@2.3.3))(typescript@5.6.3))(@unocss/eslint-plugin@0.63.4(eslint@9.12.0(jiti@2.3.3))(typescript@5.6.3))(@vue/compiler-sfc@3.5.11)(eslint@9.12.0(jiti@2.3.3))(typescript@5.6.3)
       '@iconify-json/lucide':
         specifier: ^1.2.8
-        version: 1.2.8
+        version: 1.2.9
       '@iconify-json/radix-icons':
         specifier: ^1.2.1
         version: 1.2.1
@@ -832,8 +832,8 @@ packages:
   '@iconify-json/heroicons@1.2.1':
     resolution: {integrity: sha512-TkKfS5U27kE5MXmSGLzPoz95BP5VA9xEJXwJFwmPMVLX+xyWq0OkoiWTUXB0uAoQODpb8BaRpzSydItrq9fIRA==}
 
-  '@iconify-json/lucide@1.2.8':
-    resolution: {integrity: sha512-knmDUXky8AAQ0rnGdnBjS1mBr6c0tT7aVbBd7AJcDTcJYvx9XEeyHlabFKG03DaLbOkCy0QHwCYoeZHRDEzOFA==}
+  '@iconify-json/lucide@1.2.9':
+    resolution: {integrity: sha512-4gTg74GLiIPJtt4HrAoQuxRLana085kXBf2BhGDzSpPPg8xkgRemRKhhiZE0qasKyBt/nif67Rvuz/NUFWtvDg==}
 
   '@iconify-json/radix-icons@1.2.1':
     resolution: {integrity: sha512-glzHFq3Sj9QKUQG7u2dnlC+KPJGpGM1GhyUIrFFWhXqr9CZgkUPnF5n/6YlbCkYGMa+feSwdhwroLTfKvaAaVA==}
@@ -5787,7 +5787,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.2.8':
+  '@iconify-json/lucide@1.2.9':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -6694,7 +6694,7 @@ snapshots:
     dependencies:
       '@headlessui/vue': 1.7.23(vue@3.5.11(typescript@5.6.3))
       '@iconify-json/heroicons': 1.2.1
-      '@iconify-json/lucide': 1.2.8
+      '@iconify-json/lucide': 1.2.9
       '@iconify-json/radix-icons': 1.2.1
       '@iconify-json/tabler': 1.2.5
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)
