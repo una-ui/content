@@ -24,7 +24,7 @@ defineProps({
     :href="href"
     :target="target"
     :external="external"
-    class="font-semibold underline-offset-4 underline"
+    class="font-semibold underline underline-offset-4"
   >
     <slot />
   </NuxtLink>

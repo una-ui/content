@@ -3,7 +3,7 @@ const { footer } = useConfig().value
 </script>
 
 <template>
-  <footer class="text-muted md:px-8 py-6 md:py-0">
+  <footer class="py-6 text-muted md:px-8 md:py-0">
     <div class="flex flex-col items-center justify-between gap-2 container md:h-24 md:flex-row">
       <span class="text-sm">
         {{ footer.credits }}

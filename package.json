@@ -69,6 +69,7 @@
     "@iconify-json/lucide": "^1.2.8",
     "@iconify-json/radix-icons": "^1.2.1",
     "@iconify-json/tabler": "^1.2.5",
+    "@iconify-json/vscode-icons": "^1.2.2",
     "@nuxt/devtools": "^1.5.2",
     "@unocss/eslint-plugin": "^0.63.4",
     "@unocss/extractor-mdc": "^0.63.4",

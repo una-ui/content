@@ -22,8 +22,8 @@ const isActive = computed(() => props.link._path === useRoute().path)
     :class="[level > 0 && 'pl-4']"
   >
     <NCollapsible v-if="link.children" v-model:open="isOpen">
-      <NCollapsibleTrigger btn="~" class="p-0 w-full text-left">
-        <div class="flex w-full gap-1">
+      <NCollapsibleTrigger btn="~" class="w-full p-0 text-left">
+        <div class="w-full flex gap-1">
           <NIcon
             v-if="link.icon"
             :name="link.icon"
@@ -46,7 +46,7 @@ const isActive = computed(() => props.link._path === useRoute().path)
     <NuxtLink
       v-else
       :to="link._path"
-      class="flex w-full gap-1 text-muted hover:underline"
+      class="w-full flex gap-1 text-muted hover:underline"
       :class="[isActive && 'font-medium text-primary']"
     >
       <SmartIcon

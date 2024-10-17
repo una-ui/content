@@ -22,13 +22,13 @@ const path = computed(() => useRoute().path)
 </script>
 
 <template>
-  <UiScrollArea orientation="vertical" class="relative h-full overflow-hidden text-sm py-6 pr-6" type="hover">
-    <LayoutHeaderNavMobile v-if="isMobile" class="border-b pb-2 mb-5" />
+  <UiScrollArea orientation="vertical" class="relative h-full overflow-hidden py-6 pr-6 text-sm" type="hover">
+    <LayoutHeaderNavMobile v-if="isMobile" class="mb-5 border-b pb-2" />
     <LayoutSearchButton v-if="config.search.inAside" />
-    <ul v-if="config.aside.useLevel" class="border-b mb-1 pb-4">
+    <ul v-if="config.aside.useLevel" class="mb-1 border-b pb-4">
       <li v-for="link in navigation" :key="link.id">
         <NLink
-          :to="link._path" class="mb-1 flex w-full gap-2 rounded-md px-3 py-2 transition-all hover:bg-muted"
+          :to="link._path" class="mb-1 w-full flex gap-2 rounded-md hover:bg-muted px-3 py-2 transition-all"
           :class="[
             path.startsWith(link._path) && 'bg-muted text-primary hover:bg-muted font-semibold',
           ]"

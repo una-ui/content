@@ -8,21 +8,23 @@ const isOpen = ref(false)
 
 <template>
   <NCollapsible v-if="variant === 'card'" v-model:open="isOpen" class="space-y-2">
-    <div class="flex items-center space-x-4 justify-between">
-      <h4 class="font-semibold text-sm">
+    <div class="flex items-center justify-between space-x-4">
+      <h4 class="text-sm font-semibold">
         <ContentSlot :use="$slots.title" unwrap="p" />
         {{ title }}
       </h4>
       <NCollapsibleTrigger as-child>
-        <UiButton variant="ghost" size="sm" class="w-9 p-0">
-          <Icon name="lucide:chevrons-up-down" />
-          <span class="sr-only">Toggle</span>
-        </UiButton>
+        <NButton
+          name="i-lucide-chevrons-up-down"
+          square
+          icon
+          btn="ghost-gray"
+        />
       </NCollapsibleTrigger>
     </div>
 
     <NCollapsibleContent class="space-y-2">
-      <div class="px-4 text-sm font-mono border rounded-md py-3">
+      <div class="border rounded-md px-4 py-3 text-sm font-mono">
         <ContentSlot :use="$slots.content" unwrap="p" />
         <ContentSlot unwrap="p" />
       </div>
@@ -31,7 +33,7 @@ const isOpen = ref(false)
 
   <NCollapsible v-else-if="variant === 'simple'" v-model:open="isOpen">
     <NCollapsibleTrigger class="w-full text-left">
-      <div class="flex w-full gap-1">
+      <div class="w-full flex gap-1">
         <SmartIcon
           name="lucide:chevron-down"
           class="self-center transition-all"
@@ -44,7 +46,7 @@ const isOpen = ref(false)
       </div>
     </NCollapsibleTrigger>
     <NCollapsibleContent>
-      <div class="py-2 ml-2 border-l pl-4">
+      <div class="ml-2 border-l py-2 pl-4">
         <ContentSlot :use="$slots.content" unwrap="p" />
         <ContentSlot unwrap="p" />
       </div>

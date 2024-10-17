@@ -11,12 +11,12 @@ defineProps<{
     :to="prevNext._path"
     class="basis-1/3"
   >
-    <div class="space-y-2 border transition-all rounded-lg mb-4 p-4 hover:bg-muted/50">
+    <div class="hover:bg-muted/50 mb-4 border rounded-lg p-4 transition-all space-y-2">
       <div class="flex flex-row gap-3">
-        <div v-if="side === 'left'" class="flex size-6 min-w-6">
+        <div v-if="side === 'left'" class="min-w-6 flex size-6">
           <Icon name="lucide:arrow-left" size="20" class="mx-auto self-center" />
         </div>
-        <span class="space-y-2 self-center">
+        <span class="self-center space-y-2">
           <div class="text-lg font-semibold">
             {{ prevNext.title }}
           </div>
@@ -24,7 +24,7 @@ defineProps<{
             {{ prevNext.description }}
           </div>
         </span>
-        <div v-if="side === 'right'" class="ml-auto flex size-6 min-w-6">
+        <div v-if="side === 'right'" class="ml-auto min-w-6 flex size-6">
           <Icon name="lucide:arrow-right" size="20" class="mx-auto self-center" />
         </div>
       </div>

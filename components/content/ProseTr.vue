@@ -1,5 +1,5 @@
 <template>
-  <tr class="p-0 m-0 border-t even:bg-muted/50">
+  <tr class="even:bg-muted/50 m-0 border-t p-0">
     <slot />
   </tr>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="divide-y [&:not(:first-child)]:mt-6">
+  <div class="[&:not(:first-child)]:mt-6 divide-y">
     <slot />
   </div>
 </template>

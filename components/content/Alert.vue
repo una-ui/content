@@ -13,10 +13,10 @@ const props = withDefaults(defineProps<{
 
 const typeTwClass = {
   default: '',
-  info: 'border-sky-600 text-sky-600 [&>svg]:text-sky-600',
-  warning: 'border-amber-600 text-amber-600 [&>svg]:text-amber-600',
-  success: 'border-green-600 text-green-600 [&>svg]:text-green-600',
-  danger: 'border-red-600 text-red-600 [&>svg]:text-red-600',
+  info: 'border-info-600 text-info-600 [&>svg]:text-info-600',
+  warning: 'border-warning-600 text-warning-600 [&>svg]:text-warning-600',
+  success: 'border-success-600 text-success-600 [&>svg]:text-success-600',
+  danger: 'border-error-600 text-error-600 [&>svg]:text-error-600',
 }
 
 async function alertClick() {
@@ -38,7 +38,7 @@ async function alertClick() {
 
 <template>
   <UiAlert
-    class="[&:not(:first-child)]:mt-5 transition-all"
+    class="transition-all [&:not(:first-child)]:mt-5"
     :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-muted/50']"
     @click="alertClick"
   >
@@ -48,7 +48,7 @@ async function alertClick() {
     </UiAlertTitle>
     <UiAlertDescription>
       <div class="flex flex-row space-x-2">
-        <SmartIcon v-if="icon && !title" :name="icon" :size="16" class="self-center mb-[2px] min-w-5" />
+        <SmartIcon v-if="icon && !title" :name="icon" :size="16" class="mb-[2px] min-w-5 self-center" />
         <span :class="[to && 'pr-3']">
           <slot />
         </span>

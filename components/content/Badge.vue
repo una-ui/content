@@ -11,10 +11,10 @@ const props = withDefaults(defineProps<{
 
 const typeTwClass = {
   default: '',
-  info: `${props.variant !== 'outline' && 'bg-sky-500 hover:bg-sky-400'} ${props.variant === 'outline' && 'border-sky-500 text-sky-500'}`,
-  warning: `${props.variant !== 'outline' && 'bg-amber-500 hover:bg-amber-400'} ${props.variant === 'outline' && 'border-amber-500 text-amber-500'}`,
-  success: `${props.variant !== 'outline' && 'bg-green-500 hover:bg-green-400'} ${props.variant === 'outline' && 'border-green-500 text-green-500'}`,
-  danger: `${props.variant !== 'outline' && 'bg-red-500 hover:bg-red-400'} ${props.variant === 'outline' && 'border-red-500 text-red-500'}`,
+  info: `${props.variant !== 'outline' && 'bg-info-500 hover:bg-info-400'} ${props.variant === 'outline' && 'border-info-500 text-info-500'}`,
+  warning: `${props.variant !== 'outline' && 'bg-warning-500 hover:bg-warning-400'} ${props.variant === 'outline' && 'border-warning-500 text-warning-500'}`,
+  success: `${props.variant !== 'outline' && 'bg-success-500 hover:bg-success-400'} ${props.variant === 'outline' && 'border-success-500 text-success-500'}`,
+  danger: `${props.variant !== 'outline' && 'bg-error-500 hover:bg-error-400'} ${props.variant === 'outline' && 'border-error-500 text-error-500'}`,
 }
 </script>
 

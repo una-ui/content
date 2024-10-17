@@ -12,7 +12,7 @@ const { enable, inAside, style, placeholder } = useConfig().value.search
       :class="[inAside ? 'mb-4' : 'md:w-40 lg:w-64']"
       @click="isOpen = true"
     >
-      <span class="overflow-hidden font-light text-muted mr-auto">
+      <span class="mr-auto overflow-hidden text-muted font-light">
         {{ placeholder }}
       </span>
       <NKbd kbd="soft">

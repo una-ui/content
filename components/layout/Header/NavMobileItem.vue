@@ -14,8 +14,8 @@ watch(isOpen, (v) => {
 <template>
   <template v-if="item.links">
     <NCollapsible v-model:open="isOpen">
-      <NCollapsibleTrigger class="w-full text-left p-2">
-        <div class="flex w-full gap-1">
+      <NCollapsibleTrigger class="w-full p-2 text-left">
+        <div class="w-full flex gap-1">
           {{ item.title }}
           <Icon
             :name="isOpen ? 'lucide:chevrons-down-up' : 'lucide:chevrons-up-down'"
@@ -30,7 +30,7 @@ watch(isOpen, (v) => {
             <NuxtLink
               :to="link.to"
               :target="link.to"
-              class="mb-1 block w-full gap-2 rounded-md px-3 py-2 transition-all hover:bg-muted"
+              class="mb-1 block w-full gap-2 rounded-md hover:bg-muted px-3 py-2 transition-all"
             >
               <div class="font-semibold">
                 {{ link.title }}
@@ -44,7 +44,7 @@ watch(isOpen, (v) => {
       </NCollapsibleContent>
     </NCollapsible>
   </template>
-  <NuxtLink v-else :to="item.to" :target="item.target" class="flex w-full p-2">
+  <NuxtLink v-else :to="item.to" :target="item.target" class="w-full flex p-2">
     {{ item.title }}
     <Icon name="lucide:arrow-up-right" class="ml-1 text-muted" size="12" />
   </NuxtLink>

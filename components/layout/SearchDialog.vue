@@ -86,7 +86,7 @@ function handleNavigate(delta: -1 | 1) {
               <UiCommandGroup v-if="item.children" :heading="item.title" class="p-1.5">
                 <NuxtLink v-for="child in item.children" :key="child.id" :to="child._path">
                   <UiCommandItem :value="child._path">
-                    <SmartIcon v-if="child.icon" :name="child.icon" class="size-4 mr-2" />
+                    <SmartIcon v-if="child.icon" :name="child.icon" class="mr-2 size-4" />
                     <div v-else class="mr-2 size-4" />
                     <span>{{ child.title }}</span>
                   </UiCommandItem>
@@ -116,12 +116,12 @@ function handleNavigate(delta: -1 | 1) {
               :id="i"
               :key="item.id"
               :to="item.id"
-              class="flex select-none rounded-md p-2 hover:bg-muted hover:cursor-pointer"
+              class="flex select-none rounded-md hover:bg-muted p-2 hover:cursor-pointer"
               :class="[i === activeSelect && 'bg-muted']"
               @click="open = false; activeSelect = i;"
             >
-              <SmartIcon v-if="getItemIcon(item.id)" :name="getItemIcon(item.id)" class="mr-2 size-4 shrink-0 self-center" />
-              <div v-else class="mr-2 size-4 shrink-0" />
+              <SmartIcon v-if="getItemIcon(item.id)" :name="getItemIcon(item.id)" class="mr-2 shrink-0 self-center size-4" />
+              <div v-else class="mr-2 shrink-0 size-4" />
 
               <span v-for="(subtitle, j) in item.titles" :key="`${subtitle}${j}`" class="flex shrink-0 self-center">
                 {{ subtitle }}
@@ -130,11 +130,11 @@ function handleNavigate(delta: -1 | 1) {
               <span class="shrink-0 self-center">
                 {{ item.title }}
               </span>
-              <span class="ml-2 self-center truncate text-muted text-xs" v-html="getHighlightedContent(item.content)" />
+              <span class="ml-2 self-center truncate text-xs text-muted" v-html="getHighlightedContent(item.content)" />
             </NuxtLink>
           </div>
 
-          <div v-else class="text-center text-muted pt-4">
+          <div v-else class="pt-4 text-center text-muted">
             No results found.
           </div>
         </UiCommandList>

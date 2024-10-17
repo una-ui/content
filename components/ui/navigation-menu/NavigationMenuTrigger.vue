@@ -27,7 +27,7 @@ const forwardedProps = useForwardProps(delegatedProps)
     <slot />
     <Icon
       name="lucide:chevron-down"
-      class="relative ml-1 block duration-200 top-px size-3 transition group-data-[state=open]:rotate-180"
+      class="relative top-px ml-1 block transition duration-200 size-3 group-data-[state=open]:rotate-180"
       aria-hidden="true"
     />
   </NavigationMenuTrigger>

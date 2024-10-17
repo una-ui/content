@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@una-ui/nuxt',
+    '@unocss/nuxt',
   ],
   components: {
     dirs: [

@@ -4,18 +4,18 @@ const config = useConfig()
 
 <template>
   <header
-    class="sticky top-0 z-40 bg-background/80 backdrop-blur-lg"
+    class="bg-background/80 sticky top-0 z-40 backdrop-blur-lg"
     :class="{ 'lg:border-b': config.header.border }"
   >
     <div
-      class="flex items-center justify-between gap-2 px-4 md:px-8 h-14"
+      class="h-14 flex items-center justify-between gap-2 px-4 md:px-8"
       :class="{ 'border-b lg:border-none': config.header.border, 'container max-w-screen-2xl': config.main.padded }"
     >
       <LayoutHeaderLogo class="hidden flex-1 md:flex" />
       <LayoutMobileNav />
       <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
-      <div class="flex flex-1 gap-0.5 justify-end">
+      <div class="flex flex-1 justify-end gap-0.5">
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'input'" />
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
         <div class="inline-flex gap-0.5">

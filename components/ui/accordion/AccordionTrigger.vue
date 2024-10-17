@@ -31,7 +31,7 @@ const delegatedProps = computed(() => {
       <slot name="icon">
         <Icon
           name="lucide:chevron-down"
-          class="flex size-4 shrink-0 transition-transform duration-200"
+          class="flex shrink-0 transition-transform duration-200 size-4"
         />
       </slot>
     </AccordionTrigger>

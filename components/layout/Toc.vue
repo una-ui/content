@@ -12,7 +12,7 @@ const isOpen = ref(false)
     <UiScrollArea
       v-if="!isSmall"
       orientation="vertical"
-      class="z-30 hidden overflow-y-auto md:block h-[calc(100vh-6.5rem)] lg:block"
+      class="z-30 hidden h-[calc(100vh-6.5rem)] overflow-y-auto lg:block md:block"
       type="hover"
     >
       <p class="mb-2 text-base font-semibold">
@@ -23,13 +23,13 @@ const isOpen = ref(false)
         :level="0"
         :class="[links.length && 'border-b pb-5']"
       />
-      <div v-if="links" class="text-muted pt-5">
+      <div v-if="links" class="pt-5 text-muted">
         <NuxtLink
           v-for="(link, i) in links"
           :key="i"
           :to="link.to"
           :target="link.target"
-          class="flex w-full gap-1 underline-offset-4 hover:underline [&:not(:first-child)]:pt-3"
+          class="w-full flex gap-1 underline-offset-4 [&:not(:first-child)]:pt-3 hover:underline"
         >
           <SmartIcon
             v-if="link.icon"
@@ -47,7 +47,7 @@ const isOpen = ref(false)
       class="block w-full text-sm lg:hidden"
       :class="{ 'border-b': border }"
     >
-      <NCollapsibleTrigger class="flex w-full px-4 py-3 text-left font-medium">
+      <NCollapsibleTrigger class="w-full flex px-4 py-3 text-left font-medium">
         {{ title }}
         <Icon
           name="lucide:chevron-right"
@@ -56,7 +56,7 @@ const isOpen = ref(false)
         />
       </NCollapsibleTrigger>
       <NCollapsibleContent>
-        <LayoutTocTree :links="toc.links" :level="0" class="border-l pl-4 text-sm mx-4 mb-3" />
+        <LayoutTocTree :links="toc.links" :level="0" class="mx-4 mb-3 border-l pl-4 text-sm" />
       </NCollapsibleContent>
     </NCollapsible>
   </template>

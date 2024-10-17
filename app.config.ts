@@ -144,7 +144,7 @@ export default defineAppConfig({
     },
     search: {
       enable: true,
-      style: 'input',
+      style: 'button',
       inAside: false,
     },
   },
