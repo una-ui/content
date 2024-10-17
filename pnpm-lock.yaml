@@ -57,12 +57,18 @@ importers:
       '@antfu/eslint-config':
         specifier: ^3.7.3
         version: 3.8.0(@typescript-eslint/utils@8.9.0(eslint@9.12.0(jiti@2.3.3))(typescript@5.6.3))(@unocss/eslint-plugin@0.63.4(eslint@9.12.0(jiti@2.3.3))(typescript@5.6.3))(@vue/compiler-sfc@3.5.11)(eslint@9.12.0(jiti@2.3.3))(typescript@5.6.3)
+      '@iconify-json/heroicons':
+        specifier: ^1.2.1
+        version: 1.2.1
       '@iconify-json/lucide':
         specifier: ^1.2.8
         version: 1.2.9
       '@iconify-json/radix-icons':
         specifier: ^1.2.1
         version: 1.2.1
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.8
+        version: 1.2.8
       '@iconify-json/tabler':
         specifier: ^1.2.5
         version: 1.2.5
@@ -840,6 +846,9 @@ packages:
 
   '@iconify-json/radix-icons@1.2.1':
     resolution: {integrity: sha512-glzHFq3Sj9QKUQG7u2dnlC+KPJGpGM1GhyUIrFFWhXqr9CZgkUPnF5n/6YlbCkYGMa+feSwdhwroLTfKvaAaVA==}
+
+  '@iconify-json/simple-icons@1.2.8':
+    resolution: {integrity: sha512-AzBpj2XAcWQbiy3i0rLq6lFw0pLT8lc/ptdsBc97N8KFKyXW4d62EK/EhAd82Ld0WsO+1exOvnfeIiX2FPsdzw==}
 
   '@iconify-json/tabler@1.2.5':
     resolution: {integrity: sha512-BDDLgDCbJ2btwi6cPmBL04QyPyNmWy6H13ynUAX48xxpxqUuG+hT+yrqL+RCugFimrvuhcecbSfEKnFc0BW1Ng==}
@@ -5798,6 +5807,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/radix-icons@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.2.8':
     dependencies:
       '@iconify/types': 2.0.0
 

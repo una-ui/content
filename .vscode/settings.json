@@ -46,5 +46,19 @@
     "scss",
     "pcss",
     "postcss"
-  ]
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/_ide_helper_models.php": true,
+    "**/_ide_helper.php": true,
+    ".phpstorm.meta.php": true,
+    "**/node_modules": true,
+    "env*": true
+  },
+  "explorerExclude.backup": {}
 }

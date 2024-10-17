@@ -119,7 +119,7 @@ export default defineAppConfig({
       credits: 'Copyright © 2024',
       links: [
         {
-          label: 'i-check',
+          label: 'i-radix-icons-github-logo',
           icon: true,
           square: true,
           to: 'https://github.com/una-ui/content',
