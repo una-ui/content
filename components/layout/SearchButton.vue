@@ -8,7 +8,7 @@ const { enable, inAside, style, placeholder } = useConfig().value.search
     <NButton
       v-if="style === 'input'"
       btn="solid-gray"
-      class="h-auto"
+      class="h-auto w-full"
       :class="[inAside ? 'mb-4' : 'md:w-40 lg:w-64']"
       @click="isOpen = true"
     >

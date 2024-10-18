@@ -25,9 +25,10 @@ const forwardedProps = useForwardProps(delegatedProps)
     :class="cn(navigationMenuTriggerStyle(), 'group', props.class)"
   >
     <slot />
-    <Icon
-      name="lucide:chevron-down"
-      class="relative top-px ml-1 block transition duration-200 size-3 group-data-[state=open]:rotate-180"
+    <NIcon
+      name="i-lucide-chevron-down"
+      square="3"
+      class="relative top-px ml-1 block transition duration-200 group-data-[state=open]:rotate-180"
       aria-hidden="true"
     />
   </NavigationMenuTrigger>
