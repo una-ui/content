@@ -28,7 +28,7 @@ Beautifully designed Nuxt Content template built with UnaUI. :br Customizable. C
 
 :n-separator{label="Testing area"}
 
-[Class mode]{class=text-lime}
+[Class mode]{class="text-lime"}
 
 [Attributify mode]{text="lime"}
 
