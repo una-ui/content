@@ -26,10 +26,14 @@ Craft visually appealing content effortlessly.
 Beautifully designed Nuxt Content template built with UnaUI. :br Customizable. Compatible. Open Source.
 ::
 
-<!-- <div class="border rounded-lg shadow-md">
+:n-separator{label="Testing area"}
+
+[Class mode]{class=text-lime}
+
+[Attributify mode]{text="lime"}
+
+:n-separator
+
+<div class="border rounded-lg shadow-md">
   <iframe src="/getting-started/introduction" height="700" width="100%" class="rounded-lg" scrolling="no" frameborder="0">
-</div> -->
-
-:n-badge{label="Test" badge="outline-yellow"}
-
-<NSwitch default-checked />
+</div>
