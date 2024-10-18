@@ -10,13 +10,13 @@ watch(() => useRoute().path, () => {
 <template>
   <UiSheet v-model:open="open">
     <UiSheetTrigger as-child>
-      <UiButton
-        variant="ghost"
-        size="icon"
+      <NButton
+        btn="ghost-gray"
+        square
+        icon
         class="md:hidden"
-      >
-        <Icon name="lucide:menu" size="18" />
-      </UiButton>
+        label="i-lucide-menu"
+      />
     </UiSheetTrigger>
     <UiSheetContent side="left" class="pr-0">
       <LayoutHeaderLogo />
