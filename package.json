@@ -41,7 +41,6 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "reset": "pnpm store prune && rm -rf .nuxt dist node_modules pnpm-lock.yaml && pnpm install",
-    "release": "bumpp && pnpm publish && tsx scripts/release.ts",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -80,7 +79,6 @@
     "@vueuse/core": "^11.1.0",
     "eslint": "^9.12.0",
     "shiki": "^1.21.1",
-    "simple-git": "^3.27.0",
     "vue-tsc": "^2.1.6"
   }
 }
