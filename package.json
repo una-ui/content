@@ -23,6 +23,7 @@
     "nuxt-theme",
     "theme"
   ],
+  "main": "./nuxt.config.ts",
   "files": [
     "app",
     "app.vue",
