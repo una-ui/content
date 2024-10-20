@@ -8,7 +8,7 @@ const { logo, title, showTitle } = useConfig().value.header
       <template v-if="logo.light && logo.dark && title">
         <NuxtImg :src="logo.light" class="h-8 dark:hidden" />
         <NuxtImg :src="logo.dark" class="hidden h-8 dark:block" />
-        <span v-if="showTitle && title" class="ml-3 self-center font-bold">
+        <span v-if="showTitle && title" class="self-center font-bold ml-3">
           {{ title }}
         </span>
       </template>
@@ -20,7 +20,7 @@ const { logo, title, showTitle } = useConfig().value.header
           <path d="M47 278C47 269.716 53.7157 263 62 263H222C230.284 263 237 269.716 237 278V358C237 410.467 194.467 453 142 453C89.533 453 47 410.467 47 358V278Z" style="fill: rgb(var(--una-gray-700))" />
         </svg>
 
-        <span class="dark:drop-shadow-[0_0_0.1mm_rgb(var(--c-primary)) ml-3 text-base font-bold drop-shadow-lg">
+        <span class="ml-3 text-base font-bold dark:drop-shadow-[0_0_0.1mm_rgb(var(--c-primary)) drop-shadow-lg">
           Una <span class="text-lg text-primary-active">UI</span>
         </span>
       </template>

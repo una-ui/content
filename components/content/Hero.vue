@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="mx-auto max-w-980px flex flex-col items-center gap-2 py-8 lg:py-24 md:py-12 lg:pb-20 md:pb-8">
+  <section class="flex items-center gap-2 mx-auto max-w-980px flex-col py-8 lg:py-24 md:py-12 lg:pb-20 md:pb-8">
     <NButton
       v-if="announcement"
       :to="announcement.to"
@@ -30,10 +30,10 @@ defineProps<{
       <NIcon name="i-lucide-arrow-right" class="ml-1" square="4" />
     </NButton>
 
-    <h1 class="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
+    <h1 class="font-bold text-center text-3xl leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>
-    <span class="max-w-[750px] text-center text-lg text-muted sm:text-xl">
+    <span class="text-center text-muted max-w-[750px] text-lg sm:text-xl">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </span>
 

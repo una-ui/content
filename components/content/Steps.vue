@@ -17,7 +17,7 @@ const levelClass = {
 
 <template>
   <div
-    class="[&>li]:step [counter-reset:step] ml-4 border-l pl-8 [&:not(:first-child)]:mt-6 [&:not(:last-child)]:mb-12"
+    class="border-l [&:not(:first-child)]:mt-6 [&>li]:step [counter-reset:step] ml-4 pl-8 [&:not(:last-child)]:mb-12"
     :class="levelClass[level]"
   >
     <slot />

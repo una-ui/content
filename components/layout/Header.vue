@@ -8,14 +8,14 @@ const config = useConfig()
     :class="{ 'lg:border-b': config.header.border }"
   >
     <div
-      class="h-14 flex items-center justify-between gap-0.5 px-4 md:px-8"
+      class="flex items-center justify-between px-4 md:px-8 h-14 gap-0.5"
       :class="{ 'border-b lg:border-none': config.header.border, 'container max-w-screen-2xl': config.main.padded }"
     >
       <LayoutHeaderLogo class="hidden flex-1 md:flex" />
       <LayoutMobileNav />
       <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
-      <div class="flex flex-1 justify-end gap-0.5">
+      <div class="flex flex-1 gap-0.5 justify-end">
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'input'" />
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
         <div class="inline-flex gap-0.5">

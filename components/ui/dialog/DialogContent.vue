@@ -39,7 +39,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
       <slot />
 
       <DialogClose
-        class="ring-offset-base focus:ring-ring absolute right-4 top-4 rounded-sm data-[state=open]:bg-accent data-[state=open]:text-muted opacity-70 transition-opacity disabled:pointer-events-none hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2"
+        class="absolute right-4 top-4 ring-offset-base focus:ring-ring rounded-sm data-[state=open]:bg-accent data-[state=open]:text-muted opacity-70 transition-opacity disabled:pointer-events-none hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2"
       >
         <Icon name="lucide:x" class="block size-4" />
         <span class="sr-only">Close</span>

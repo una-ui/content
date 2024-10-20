@@ -20,7 +20,7 @@ const { fieldRequiredText } = useConfig().value.main
         <span v-if="required" class="text-sm text-muted font-mono">
           {{ fieldRequiredText }}
         </span>
-        <span class="ml-auto text-sm text-muted font-mono">
+        <span class="text-sm text-muted font-mono ml-auto">
           {{ type }}
         </span>
       </div>
