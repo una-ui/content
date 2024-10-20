@@ -41,7 +41,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "reset": "pnpm store prune && rm -rf .nuxt dist node_modules pnpm-lock.yaml && pnpm install",
-    "release": "bumpp -r -x \"pnpm run changelog\" --all && pnpm publish && tsx scripts/release.ts",
+    "release": "bumpp && pnpm publish && tsx scripts/release.ts",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
