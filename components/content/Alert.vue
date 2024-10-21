@@ -38,7 +38,7 @@ async function alertClick() {
 
 <template>
   <UiAlert
-    class="transition-all [&:not(:first-child)]:mt-5"
+    class="[&:not(:first-child)]:mt-5 transition-all"
     :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-muted/50']"
     @click="alertClick"
   >

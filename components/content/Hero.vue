@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="flex items-center gap-2 mx-auto max-w-980px flex-col py-8 lg:py-24 md:py-12 lg:pb-20 md:pb-8">
+  <section class="flex items-center gap-2 mx-auto flex-col py-8 md:py-12 md:pb-8 max-w-980px lg:py-24 lg:pb-20">
     <NButton
       v-if="announcement"
       :to="announcement.to"
@@ -30,14 +30,14 @@ defineProps<{
       <NIcon name="i-lucide-arrow-right" class="ml-1" square="4" />
     </NButton>
 
-    <h1 class="font-bold text-center text-3xl leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
+    <h1 class="font-bold text-3xl leading-tight tracking-tighter lg:leading-[1.1] text-center md:text-6xl">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>
-    <span class="text-center text-muted max-w-[750px] text-lg sm:text-xl">
+    <span class="text-center text-muted text-lg max-w-[750px] sm:text-xl">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </span>
 
-    <section class="w-full flex items-center justify-center py-4 space-x-4 md:pb-10">
+    <section class="w-full flex items-center space-x-4 justify-center py-4 md:pb-10">
       <NButton
         v-for="(action, i) in actions"
         :key="i"

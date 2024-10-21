@@ -28,7 +28,7 @@ const path = computed(() => useRoute().path)
     <ul v-if="config.aside.useLevel" class="border-b mb-1 pb-4">
       <li v-for="link in navigation" :key="link.id">
         <NLink
-          :to="link._path" class="mb-1 w-full flex gap-2 rounded-md py-2 transition-all hover:bg-muted px-3"
+          :to="link._path" class="mb-1 w-full flex gap-2 rounded-md py-2 transition-all px-3 hover:bg-muted"
           :class="[
             path.startsWith(link._path) && 'bg-muted text-primary hover:bg-muted font-semibold',
           ]"
