@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ScrollBar from '../ui/scroll-area/ScrollBar.vue'
+import ScrollBar from '../common/scroll-area/ScrollBar.vue'
 
 withDefaults(defineProps<{
   variant?: 'separate' | 'card'

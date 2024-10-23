@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useToast } from '@/components/ui/toast/use-toast'
+import { useToast } from '~/components/common/toast/use-toast'
 
 const props = defineProps<{
   code: string

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Toaster from '@/components/ui/toast/Toaster.vue'
+import Toaster from '~/components/common/toast/Toaster.vue'
 
 const config = useConfig()
 const route = useRoute()
