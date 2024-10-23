@@ -9,12 +9,12 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <UiAccordion
+  <CommonAccordion
     :type="type"
     :collapsible="collapsible"
     :default-value="defaultValue"
     class="[&:not(:first-child)]:mt-5"
   >
     <slot />
-  </UiAccordion>
+  </CommonAccordion>
 </template>

@@ -5,19 +5,19 @@ const breadcrumbs = computed(() => useBreadcrumb(route.path))
 </script>
 
 <template>
-  <UiBreadcrumb>
-    <UiBreadcrumbList>
+  <CommonBreadcrumb>
+    <CommonBreadcrumbList>
       <template v-for="(breadcrumb, index) in breadcrumbs" :key="breadcrumb.title">
-        <UiBreadcrumbItem>
-          <UiBreadcrumbLink
+        <CommonBreadcrumbItem>
+          <CommonBreadcrumbLink
             :href="index === 0 ? undefined : breadcrumb.href"
             :class="{ 'text-base': index === breadcrumbs.length - 1 }"
           >
             {{ breadcrumb.title }}
-          </UiBreadcrumbLink>
-        </UiBreadcrumbItem>
-        <UiBreadcrumbSeparator v-if="index !== breadcrumbs.length - 1" />
+          </CommonBreadcrumbLink>
+        </CommonBreadcrumbItem>
+        <CommonBreadcrumbSeparator v-if="index !== breadcrumbs.length - 1" />
       </template>
-    </UiBreadcrumbList>
-  </UiBreadcrumb>
+    </CommonBreadcrumbList>
+  </CommonBreadcrumb>
 </template>

@@ -9,7 +9,7 @@ const isOpen = ref(false)
 
 <template>
   <template v-if="toc?.links.length">
-    <UiScrollArea
+    <CommonScrollArea
       v-if="!isSmall"
       orientation="vertical"
       class="z-30 hidden overflow-y-auto md:block h-[calc(100vh-6.5rem)] lg:block"
@@ -40,7 +40,7 @@ const isOpen = ref(false)
           <Icon name="lucide:arrow-up-right" class="ml-auto self-center text-muted" size="13" />
         </NuxtLink>
       </div>
-    </UiScrollArea>
+    </CommonScrollArea>
     <NCollapsible
       v-else
       v-model:open="isOpen"

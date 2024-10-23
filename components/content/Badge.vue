@@ -20,8 +20,8 @@ const typeTwClass = {
 
 <template>
   <NuxtLink :to="to" :target="target" class="mx-0.5">
-    <UiBadge :variant="variant" :class="typeTwClass[type]">
+    <CommonBadge :variant="variant" :class="typeTwClass[type]">
       <ContentSlot unwrap="p" />
-    </UiBadge>
+    </CommonBadge>
   </NuxtLink>
 </template>

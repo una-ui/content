@@ -5,14 +5,14 @@ const { nav } = useConfig().value.header
 </script>
 
 <template>
-  <UiNavigationMenu>
-    <UiNavigationMenuList>
-      <UiNavigationMenuItem v-for="(item, i) in nav" :key="i" class="relative">
+  <CommonNavigationMenu>
+    <CommonNavigationMenuList>
+      <CommonNavigationMenuItem v-for="(item, i) in nav" :key="i" class="relative">
         <template v-if="item.links">
-          <UiNavigationMenuTrigger class="font-semibold bg-transparent">
+          <CommonNavigationMenuTrigger class="font-semibold bg-transparent">
             {{ item.title }}
-          </UiNavigationMenuTrigger>
-          <UiNavigationMenuContent>
+          </CommonNavigationMenuTrigger>
+          <CommonNavigationMenuContent>
             <ul class="w-250px p-2">
               <li v-for="link in item.links" :key="link.title">
                 <NuxtLink
@@ -29,7 +29,7 @@ const { nav } = useConfig().value.header
                 </NuxtLink>
               </li>
             </ul>
-          </UiNavigationMenuContent>
+          </CommonNavigationMenuContent>
         </template>
         <NuxtLink v-else :to="item.to" :target="item.target">
           <NIcon name="lucide-arrow-up-right" class="absolute text-muted right-2 top-2" size="13" />
@@ -37,7 +37,7 @@ const { nav } = useConfig().value.header
             {{ item.title }}
           </div>
         </NuxtLink>
-      </UiNavigationMenuItem>
-    </UiNavigationMenuList>
-  </UiNavigationMenu>
+      </CommonNavigationMenuItem>
+    </CommonNavigationMenuList>
+  </CommonNavigationMenu>
 </template>

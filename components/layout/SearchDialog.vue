@@ -64,50 +64,50 @@ function handleNavigate(delta: -1 | 1) {
 </script>
 
 <template>
-  <UiDialog v-model:open="open">
-    <UiDialogContent class="p-0">
+  <CommonDialog v-model:open="open">
+    <CommonDialogContent class="p-0">
       <VisuallyHidden as-child>
-        <UiDialogTitle />
+        <CommonDialogTitle />
       </VisuallyHidden>
       <VisuallyHidden as-child>
-        <UiDialogDescription aria-describedby="undefined" />
+        <CommonDialogDescription aria-describedby="undefined" />
       </VisuallyHidden>
-      <UiCommand v-model:search-term="input" class="h-svh sm:h-[350px]">
-        <UiCommandInput
+      <CommonCommand v-model:search-term="input" class="h-svh sm:h-[350px]">
+        <CommonCommandInput
           :loading="searchLoading"
           :placeholder="placeholderDetailed"
           @keydown.enter="handleEnter"
           @keydown.down="handleNavigate(1)"
           @keydown.up="handleNavigate(-1)"
         />
-        <UiCommandList class="text-sm" @escape-key-down="open = false">
+        <CommonCommandList class="text-sm" @escape-key-down="open = false">
           <template v-if="!input?.length">
             <template v-for="item in navigation" :key="item._path">
-              <UiCommandGroup v-if="item.children" :heading="item.title" class="p-1.5">
+              <CommonCommandGroup v-if="item.children" :heading="item.title" class="p-1.5">
                 <NuxtLink v-for="child in item.children" :key="child.id" :to="child._path">
-                  <UiCommandItem :value="child._path">
+                  <CommonCommandItem :value="child._path">
                     <SmartIcon v-if="child.icon" :name="child.icon" class="size-4 mr-2" />
                     <div v-else class="mr-2 size-4" />
                     <span>{{ child.title }}</span>
-                  </UiCommandItem>
+                  </CommonCommandItem>
                 </NuxtLink>
-              </UiCommandGroup>
-              <UiCommandSeparator v-if="item.children" />
+              </CommonCommandGroup>
+              <CommonCommandSeparator v-if="item.children" />
             </template>
-            <UiCommandGroup heading="Theme" class="p-1.5">
-              <UiCommandItem value="light" @click="colorMode.preference = 'light'">
+            <CommonCommandGroup heading="Theme" class="p-1.5">
+              <CommonCommandItem value="light" @click="colorMode.preference = 'light'">
                 <Icon name="lucide:sun" class="mr-2 size-4" />
                 <span>Light</span>
-              </UiCommandItem>
-              <UiCommandItem value="dark" @click="colorMode.preference = 'dark'">
+              </CommonCommandItem>
+              <CommonCommandItem value="dark" @click="colorMode.preference = 'dark'">
                 <Icon name="lucide:moon" class="mr-2 size-4" />
                 <span>Dark</span>
-              </UiCommandItem>
-              <UiCommandItem value="system" @click="colorMode.preference = 'auto'">
+              </CommonCommandItem>
+              <CommonCommandItem value="system" @click="colorMode.preference = 'auto'">
                 <Icon name="lucide:monitor" class="mr-2 size-4" />
                 <span>System</span>
-              </UiCommandItem>
-            </UiCommandGroup>
+              </CommonCommandItem>
+            </CommonCommandGroup>
           </template>
 
           <div v-else-if="searchResult?.length" class="p-1.5">
@@ -137,8 +137,8 @@ function handleNavigate(delta: -1 | 1) {
           <div v-else class="text-center text-muted pt-4">
             No results found.
           </div>
-        </UiCommandList>
-      </UiCommand>
-    </UiDialogContent>
-  </UiDialog>
+        </CommonCommandList>
+      </CommonCommand>
+    </CommonDialogContent>
+  </CommonDialog>
 </template>

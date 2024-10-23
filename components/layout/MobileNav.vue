@@ -8,8 +8,8 @@ watch(() => useRoute().path, () => {
 </script>
 
 <template>
-  <UiSheet v-model:open="open">
-    <UiSheetTrigger as-child>
+  <CommonSheet v-model:open="open">
+    <CommonSheetTrigger as-child>
       <NButton
         btn="ghost-gray"
         square
@@ -17,10 +17,10 @@ watch(() => useRoute().path, () => {
         class="md:hidden"
         label="i-lucide-menu"
       />
-    </UiSheetTrigger>
-    <UiSheetContent side="left" class="pr-0">
+    </CommonSheetTrigger>
+    <CommonSheetContent side="left" class="pr-0">
       <LayoutHeaderLogo />
       <LayoutAside is-mobile />
-    </UiSheetContent>
-  </UiSheet>
+    </CommonSheetContent>
+  </CommonSheet>
 </template>

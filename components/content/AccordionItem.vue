@@ -11,14 +11,14 @@ const autoValue = useId()
 </script>
 
 <template>
-  <UiAccordionItem :value="value ?? autoValue">
-    <UiAccordionTrigger>
+  <CommonAccordionItem :value="value ?? autoValue">
+    <CommonAccordionTrigger>
       <ContentSlot :use="$slots.title" unwrap="p" />
       {{ title }}
-    </UiAccordionTrigger>
-    <UiAccordionContent>
+    </CommonAccordionTrigger>
+    <CommonAccordionContent>
       <ContentSlot :use="$slots.content" unwrap="p" />
       {{ content }}
-    </UiAccordionContent>
-  </UiAccordionItem>
+    </CommonAccordionContent>
+  </CommonAccordionItem>
 </template>

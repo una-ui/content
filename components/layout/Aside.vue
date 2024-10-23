@@ -22,7 +22,7 @@ const path = computed(() => useRoute().path)
 </script>
 
 <template>
-  <UiScrollArea orientation="vertical" class="relative h-full overflow-hidden text-sm py-6 pr-6" type="hover">
+  <CommonScrollArea orientation="vertical" class="relative h-full overflow-hidden text-sm py-6 pr-6" type="hover">
     <LayoutHeaderNavMobile v-if="isMobile" class="border-b pb-2 mb-5" />
     <LayoutSearchButton v-if="config.search.inAside" />
     <ul v-if="config.aside.useLevel" class="border-b mb-1 pb-4">
@@ -39,5 +39,5 @@ const path = computed(() => useRoute().path)
       </li>
     </ul>
     <LayoutAsideTree :links="tree" :level="0" class="px-3" :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']" />
-  </UiScrollArea>
+  </CommonScrollArea>
 </template>

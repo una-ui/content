@@ -30,7 +30,7 @@ const icon = iconMap.get(props.filename?.toLowerCase()) || iconMap.get(props.lan
 </script>
 
 <template>
-  <UiCard
+  <CommonCard
     class="relative [&:not(:first-child)]:mt-5 overflow-hidden [&:not(:last-child)]:mb-5"
     :class="[inGroup && 'mb-0 rounded-t-none border-none']"
   >
@@ -44,7 +44,7 @@ const icon = iconMap.get(props.filename?.toLowerCase()) || iconMap.get(props.lan
       <CodeCopy :code="code" />
     </span>
     <div class="bg-muted/30">
-      <UiScrollArea>
+      <CommonScrollArea>
         <div
           class="py-3 text-sm overflow-x-auto"
           :class="[!inGroup && !filename && 'inline-copy', !language && 'pl-3', !inGroup]"
@@ -52,9 +52,9 @@ const icon = iconMap.get(props.filename?.toLowerCase()) || iconMap.get(props.lan
           <slot />
         </div>
         <ScrollBar orientation="horizontal" />
-      </UiScrollArea>
+      </CommonScrollArea>
     </div>
-  </UiCard>
+  </CommonCard>
 </template>
 
 <style>

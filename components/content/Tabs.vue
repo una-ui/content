@@ -22,13 +22,13 @@ function label(props: any) {
 </script>
 
 <template>
-  <UiTabs
+  <CommonTabs
     v-if="variant === 'separate'"
     class="[&:not(:first-child)]:mt-5"
     :default-value="label(($slots.default?.() ?? [])[0]?.props)"
   >
-    <UiTabsList>
-      <UiTabsTrigger
+    <CommonTabsList>
+      <CommonTabsTrigger
         v-for="(slot, i) in $slots.default?.() ?? []"
         :key="`${i}${label(slot.props)}`"
         :value="label(slot.props)"
@@ -39,20 +39,20 @@ function label(props: any) {
           class="mr-1.5 self-center"
         />
         {{ label(slot.props) }}
-      </UiTabsTrigger>
-    </UiTabsList>
+      </CommonTabsTrigger>
+    </CommonTabsList>
 
-    <UiTabsContent
+    <CommonTabsContent
       v-for="(slot, i) in $slots.default?.() ?? []"
       :key="`${i}${label(slot.props)}`"
       :value="label(slot.props)"
     >
       <component :is="slot" />
-    </UiTabsContent>
-  </UiTabs>
+    </CommonTabsContent>
+  </CommonTabs>
 
-  <UiCard v-else-if="variant === 'card'" class="[&:not(:first-child)]:mt-5">
-    <UiScrollArea>
+  <CommonCard v-else-if="variant === 'card'" class="[&:not(:first-child)]:mt-5">
+    <CommonScrollArea>
       <div class="relative flex overflow-x-auto border-b text-sm p-0.5">
         <div class="flex p-1">
           <div
@@ -78,7 +78,7 @@ function label(props: any) {
         />
       </div>
       <ScrollBar orientation="horizontal" />
-    </UiScrollArea>
+    </CommonScrollArea>
 
     <div
       v-for="(slot, i) in $slots.default?.() ?? []"
@@ -90,5 +90,5 @@ function label(props: any) {
     >
       <component :is="slot" :in-group="true" />
     </div>
-  </UiCard>
+  </CommonCard>
 </template>
