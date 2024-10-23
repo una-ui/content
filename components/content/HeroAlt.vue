@@ -16,7 +16,7 @@ defineProps<{
       v-if="announcement"
       :to="announcement.to"
       :target="announcement.target"
-      class="items-center text-sm inline-flex px-0.5 font-medium"
+      class="items-center text-sm font-medium inline-flex px-0.5"
     >
       <template v-if="announcement.icon">
         <SmartIcon :name="announcement.icon" :size="16" />

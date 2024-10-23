@@ -24,7 +24,7 @@ const isOpen = ref(false)
     </div>
 
     <NCollapsibleContent class="space-y-2">
-      <div class="px-4 text-sm border font-mono rounded-md py-3">
+      <div class="px-4 text-sm rounded-md border font-mono py-3">
         <ContentSlot :use="$slots.content" unwrap="p" />
         <ContentSlot unwrap="p" />
       </div>

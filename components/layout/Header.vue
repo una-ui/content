@@ -8,7 +8,7 @@ const config = useConfig()
     :class="{ 'lg:border-b': config.header.border }"
   >
     <div
-      class="flex items-center justify-between px-4 md:px-8 h-14 gap-2"
+      class="flex items-center justify-between px-4 md:px-8 gap-2 h-14"
       :class="{ 'border-b lg:border-none': config.header.border, 'container max-w-screen-2xl': config.main.padded }"
     >
       <LayoutHeaderLogo class="hidden flex-1 md:flex" />
