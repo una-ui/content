@@ -18,7 +18,7 @@ const config = useConfig()
       <div class="flex flex-1 gap-2 justify-end">
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'input'" />
         <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
-        <div class="inline-flex gap-2">
+        <div class="inline-flex gap-0">
           <NButton
             v-for="(link, i) in config.header.links"
             :key="i"
@@ -30,8 +30,8 @@ const config = useConfig()
             :label="link.icon"
           />
           <DarkModeToggle v-if="config.header.darkModeToggle" />
+          <NThemeSwitcher v-if="config.theme.customizable" />
         </div>
-        <NThemeSwitcher v-if="config.theme.customizable" />
       </div>
     </div>
     <div v-if="config.toc.enable && config.toc.enableInMobile" class="lg:hidden">
