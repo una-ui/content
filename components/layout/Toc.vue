@@ -27,8 +27,7 @@ const isOpen = ref(false)
         <NuxtLink
           v-for="(link, i) in links"
           :key="i"
-          :to="link.to"
-          :target="link.target"
+          v-bind="link"
           class="w-full flex gap-1 underline-offset-4 [&:not(:first-child)]:pt-3 hover:underline"
         >
           <SmartIcon
