@@ -14,6 +14,7 @@ const config = useConfig()
       <LayoutHeaderLogo class="hidden flex-1 md:flex" />
       <LayoutMobileNav />
       <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
+      <LayoutPackageVersionNav v-if="config.header.packageVersionNav.enable" />
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
       <div class="flex flex-1 gap-2 justify-end">
         <LayoutSearchButton v-if="!config.search.inAside" />

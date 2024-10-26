@@ -145,6 +145,11 @@ export default defineAppConfig({
         icon: 'lucide:circle-dot',
         to: 'https://github.com/una-ui/content/issues',
         target: '_blank',
+      }, {
+        title: 'Release Notes',
+        icon: 'lucide:file-text',
+        to: 'https://github.com/una-ui/una-ui/releases',
+        target: '_blank',
       }],
     },
     search: {
