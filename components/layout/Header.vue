@@ -16,9 +16,8 @@ const config = useConfig()
       <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
       <div class="flex flex-1 gap-2 justify-end">
-        <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'input'" />
-        <LayoutSearchButton v-if="!config.search.inAside && config.search.style === 'button'" />
-        <div class="inline-flex gap-0">
+        <LayoutSearchButton v-if="!config.search.inAside" />
+        <div class="inline-flex gap-1">
           <NButton
             v-for="(link, i) in config.header.links"
             :key="i"
