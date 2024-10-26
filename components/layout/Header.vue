@@ -4,7 +4,7 @@ const config = useConfig()
 
 <template>
   <header
-    class="bg-base bg-opacity-80 sticky top-0 z-40 backdrop-blur-lg"
+    class="bg-$c-base/80 sticky top-0 z-40 backdrop-blur-lg"
     :class="{ 'lg:border-b': config.header.border }"
   >
     <div
