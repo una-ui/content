@@ -3,7 +3,7 @@ const { page } = useContent()
 const config = useConfig()
 
 useSeoMeta({
-  title: `${page.value?.title ?? '404'} - ${config.value.site.name}`,
+  title: page.value?.title ? `${page.value.title} - ${config.value.site.name}` : `${config.value.site.name}`,
   ogTitle: page.value?.title,
   description: page.value?.description,
 })
