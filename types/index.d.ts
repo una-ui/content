@@ -36,6 +36,17 @@ interface DefaultConfig {
       to: string
       target: string
     })[]
+    packageVersionNav: {
+      label: string
+      enable: boolean
+      to: string
+      target: string
+      items: ({
+        label: string
+        to: string
+        trailing
+      })[] // NButton
+    }
   }
   aside: {
     useLevel: boolean

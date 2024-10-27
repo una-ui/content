@@ -156,6 +156,11 @@ export default defineAppConfig({
         class: 'hover:text-pink',
         to: 'https://github.com/sponsors/phojie',
         target: '_blank',
+      }, {
+        title: 'Release Notes',
+        icon: 'lucide:file-text',
+        to: 'https://github.com/una-ui/una-ui/releases',
+        target: '_blank',
       }],
     },
     search: {

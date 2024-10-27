@@ -1,4 +1,5 @@
 import { defu } from 'defu'
+import pkg from '../package.json'
 
 const defaultConfig: DefaultConfig = {
   site: {
@@ -24,6 +25,24 @@ const defaultConfig: DefaultConfig = {
     darkModeToggle: true,
     nav: [],
     links: [],
+    packageVersionNav: {
+      enable: true,
+      label: `v${pkg.version}`,
+      to: '',
+      target: '_blank',
+      items: [
+        {
+          label: 'Release Notes',
+          to: 'https://github.com/una-ui/una-ui/releases',
+          trailing: 'i-heroicons-arrow-up-right text-10px',
+        },
+        {
+          label: 'Contributing',
+          to: 'https://github.com/una-ui/una-ui/blob/main/CONTRIBUTING.md',
+          trailing: 'i-heroicons-arrow-up-right text-10px',
+        },
+      ],
+    },
   },
   aside: {
     useLevel: true,

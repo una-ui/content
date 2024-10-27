@@ -11,10 +11,16 @@ const config = useConfig()
       class="flex items-center justify-between px-4 md:px-8 gap-2 h-14"
       :class="{ 'border-b lg:border-none': config.header.border, 'container max-w-screen-2xl': config.main.padded }"
     >
-      <LayoutHeaderLogo class="hidden flex-1 md:flex" />
-      <LayoutMobileNav />
-      <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
+      <div class="flex md:flex-1 items-center">
+        <LayoutHeaderLogo class="hidden md:flex" />
+        <LayoutMobileNav />
+        <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
+        <NSeparator v-if="config.header.packageVersionNav.enable" orientation="vertical" class="h-5 mr-0 hidden md:flex" />
+        <LayoutPackageVersionNav v-if="config.header.packageVersionNav.enable" class="hidden md:flex" />
+      </div>
+
       <LayoutHeaderNav class="hidden flex-1 lg:flex" />
+
       <div class="flex flex-1 gap-2 justify-end">
         <LayoutSearchButton v-if="!config.search.inAside" />
         <div class="inline-flex gap-1">
@@ -22,7 +28,7 @@ const config = useConfig()
             v-for="(link, i) in config.header.links"
             :key="i"
             btn="ghost-gray"
-            class="text-base"
+            class="text-base hidden md:flex"
             v-bind="link"
             square
             icon
