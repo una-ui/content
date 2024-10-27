@@ -138,12 +138,23 @@ export default defineAppConfig({
       links: [{
         title: 'Star on GitHub',
         icon: 'lucide:star',
-        to: 'https://github.com/una-ui/content',
+        to: 'https://github.com/una-ui/una-ui',
         target: '_blank',
       }, {
         title: 'Create Issues',
         icon: 'lucide:circle-dot',
-        to: 'https://github.com/una-ui/content/issues',
+        to: 'https://github.com/una-ui/una-ui/issues',
+        target: '_blank',
+      }, {
+        title: 'Release Notes',
+        icon: 'lucide:book',
+        to: 'https://github.com/una-ui/una-ui/releases',
+        target: '_blank',
+      }, {
+        title: 'Sponsor the Project',
+        icon: 'lucide:heart',
+        class: 'hover:text-pink',
+        to: 'https://github.com/sponsors/phojie',
         target: '_blank',
       }, {
         title: 'Release Notes',
