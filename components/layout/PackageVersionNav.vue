@@ -4,7 +4,8 @@ const { header } = useConfig().value
 
 <template>
   <NDropdownMenu
-    v-bind="header.packageVersionNav"
+    :label="header.packageVersionNav.label"
+    :items="header.packageVersionNav.items"
     dropdown-menu="text-gray"
     trailing="i-radix-icons-caret-down"
   />
