@@ -6,6 +6,6 @@ const { header } = useConfig().value
   <NDropdownMenu
     v-bind="header.packageVersionNav"
     dropdown-menu="text-gray"
-    trailing="radix-icons:caret-down"
+    trailing="i-radix-icons-caret-down"
   />
 </template>

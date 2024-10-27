@@ -39,5 +39,21 @@ const path = computed(() => useRoute().path)
       </li>
     </ul>
     <LayoutAsideTree :links="tree" :level="0" class="px-3" :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']" />
+
+    <div class="absolute bottom-5 inset-x-0">
+      <div class="flex items-center">
+        <NButton
+          v-for="(link, i) in config.header.links"
+          :key="i"
+          size="xs"
+          btn="ghost-gray"
+          class="text-base"
+          v-bind="link"
+          square
+          icon
+          :label="link.icon"
+        />
+      </div>
+    </div>
   </CommonScrollArea>
 </template>

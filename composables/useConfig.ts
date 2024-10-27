@@ -33,12 +33,12 @@ const defaultConfig: DefaultConfig = {
       items: [
         {
           label: 'Release Notes',
-          href: 'https://github.com/una-ui/una-ui/releases',
+          to: 'https://github.com/una-ui/una-ui/releases',
           trailing: 'i-heroicons-arrow-up-right text-10px',
         },
         {
           label: 'Contributing',
-          href: 'https://github.com/una-ui/una-ui/blob/main/CONTRIBUTING.md',
+          to: 'https://github.com/una-ui/una-ui/blob/main/CONTRIBUTING.md',
           trailing: 'i-heroicons-arrow-up-right text-10px',
         },
       ],

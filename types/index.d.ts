@@ -43,7 +43,7 @@ interface DefaultConfig {
       target: string
       items: ({
         label: string
-        href: string
+        to: string
         trailing
       })[] // NButton
     }

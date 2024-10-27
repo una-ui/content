@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const open = ref(false)
+const config = useConfig()
 
 // Close sheet on navigation
 watch(() => useRoute().path, () => {
@@ -19,7 +20,12 @@ watch(() => useRoute().path, () => {
       />
     </CommonSheetTrigger>
     <CommonSheetContent side="left" class="pr-0">
-      <LayoutHeaderLogo />
+      <div class="flex items-center">
+        <LayoutHeaderLogo />
+        <NSeparator v-if="config.header.packageVersionNav.enable" orientation="vertical" class="h-5 mr-0" />
+        <LayoutPackageVersionNav v-if="config.header.packageVersionNav.enable" />
+      </div>
+
       <LayoutAside is-mobile />
     </CommonSheetContent>
   </CommonSheet>
