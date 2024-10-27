@@ -40,7 +40,7 @@ const path = computed(() => useRoute().path)
     </ul>
     <LayoutAsideTree :links="tree" :level="0" class="px-3" :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']" />
 
-    <div class="absolute bottom-5 inset-x-0">
+    <div class="bottom-5 inset-x-0 absolute md:hidden">
       <div class="flex items-center">
         <NButton
           v-for="(link, i) in config.header.links"
