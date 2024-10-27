@@ -26,22 +26,9 @@ const defaultConfig: DefaultConfig = {
     nav: [],
     links: [],
     packageVersionNav: {
-      enable: true,
+      enable: false,
       label: `v${pkg.version}`,
-      to: '',
-      target: '_blank',
-      items: [
-        {
-          label: 'Release Notes',
-          to: 'https://github.com/una-ui/una-ui/releases',
-          trailing: 'i-heroicons-arrow-up-right text-10px',
-        },
-        {
-          label: 'Contributing',
-          to: 'https://github.com/una-ui/una-ui/blob/main/CONTRIBUTING.md',
-          trailing: 'i-heroicons-arrow-up-right text-10px',
-        },
-      ],
+      items: [],
     },
   },
   aside: {

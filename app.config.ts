@@ -1,3 +1,5 @@
+import pkg from './package.json'
+
 export default defineAppConfig({
   unaContent: {
     header: {
@@ -5,6 +7,22 @@ export default defineAppConfig({
       showLoadingIndicator: true,
       showLogo: true,
       showTitle: false,
+      packageVersionNav: {
+        enable: true,
+        label: `v${pkg.version}`,
+        items: [
+          {
+            label: 'Release Notes',
+            to: 'https://github.com/una-ui/una-ui/releases',
+            trailing: 'i-heroicons-arrow-up-right text-10px',
+          },
+          {
+            label: 'Contributing',
+            to: 'https://github.com/una-ui/una-ui/blob/main/CONTRIBUTING.md',
+            trailing: 'i-heroicons-arrow-up-right text-10px',
+          },
+        ],
+      },
       nav: [{
         title: 'Docs',
         links: [{
@@ -153,7 +171,6 @@ export default defineAppConfig({
       }, {
         title: 'Sponsor the Project',
         icon: 'lucide:heart',
-        class: 'hover:text-pink',
         to: 'https://github.com/sponsors/phojie',
         target: '_blank',
       }, {

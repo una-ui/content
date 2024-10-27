@@ -39,8 +39,6 @@ interface DefaultConfig {
     packageVersionNav: {
       label: string
       enable: boolean
-      to: string
-      target: string
       items: ({
         label: string
         to: string
