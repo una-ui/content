@@ -4,6 +4,7 @@ export { default as Alert } from './Alert.vue'
 export { default as AlertDescription } from './AlertDescription.vue'
 export { default as AlertTitle } from './AlertTitle.vue'
 
+// @unocss-include
 export const alertVariants = cva(
   'relative w-full rounded-lg border p-4 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-base [&>svg~*]:pl-7',
   {
