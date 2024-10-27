@@ -38,6 +38,7 @@ const path = computed(() => useRoute().path)
         </NLink>
       </li>
     </ul>
+
     <LayoutAsideTree :links="tree" :level="0" class="px-3" :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']" />
 
     <div class="bottom-5 inset-x-0 absolute md:hidden">

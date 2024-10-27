@@ -5,8 +5,10 @@ import {
   DialogContent,
   type DialogContentEmits,
   type DialogContentProps,
+  DialogDescription,
   DialogOverlay,
   DialogPortal,
+  DialogTitle,
   useForwardPropsEmits,
 } from 'radix-vue'
 import { computed, type HTMLAttributes } from 'vue'
@@ -43,6 +45,13 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
       :class="cn(sheetVariants({ side }), props.class)"
       v-bind="{ ...forwarded, ...$attrs }"
     >
+      <DialogTitle class="sr-only">
+        Title
+      </DialogTitle>
+      <DialogDescription class="sr-only">
+        Description
+      </DialogDescription>
+
       <slot />
 
       <DialogClose
