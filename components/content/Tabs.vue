@@ -53,13 +53,13 @@ function label(props: any) {
 
   <CommonCard v-else-if="variant === 'card'" class="[&:not(:first-child)]:mt-5">
     <CommonScrollArea>
-      <div class="relative flex overflow-x-auto border-b text-sm p-0.5">
+      <div class="relative flex overflow-x-auto border-b p-0.5 text-sm">
         <div class="flex p-1">
           <div
             v-for="(slot, i) in ($slots.default?.() ?? [])"
             :key="`${i}${label(slot.props)}`"
             :value="label(slot.props)"
-            class="flex cursor-pointer rounded-md text-muted transition-all px-3 py-1.5 duration-75"
+            class="flex cursor-pointer rounded-md px-3 py-1.5 text-muted transition-all duration-75"
             :class="[activeTabIndex === i && 'bg-muted text-primary']"
             @mousedown.left="activeTabIndex = i"
           >
@@ -73,7 +73,7 @@ function label(props: any) {
         </div>
         <CodeCopy
           v-if="$slots.default?.()[activeTabIndex]?.props?.code"
-          class="ml-auto self-center mr-3 pl-2"
+          class="ml-auto mr-3 self-center pl-2"
           :code="$slots.default?.()[activeTabIndex]?.props?.code"
         />
       </div>

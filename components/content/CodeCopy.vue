@@ -33,7 +33,7 @@ onClickOutside(checkIconRef, () => {
       <Icon
         v-if="copied === false"
         name="lucide:copy"
-        class="self-center text-muted block cursor-pointer hover:text-primary"
+        class="block cursor-pointer self-center text-muted hover:text-primary"
         @click="handleClick"
       />
       <Icon

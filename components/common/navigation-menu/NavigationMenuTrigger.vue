@@ -28,7 +28,7 @@ const forwardedProps = useForwardProps(delegatedProps)
     <NIcon
       name="i-lucide-chevron-down"
       square="3"
-      class="relative block duration-200 ml-1 top-px transition group-data-[state=open]:rotate-180"
+      class="relative top-px ml-1 block transition duration-200 group-data-[state=open]:rotate-180"
       aria-hidden="true"
     />
   </NavigationMenuTrigger>

@@ -11,12 +11,12 @@ defineProps<{
 </script>
 
 <template>
-  <section class="flex items-start gap-2 px-4 mx-auto flex-col py-8 md:py-12 md:pb-8 lg:py-12 lg:pb-10">
+  <section class="mx-auto flex flex-col items-start gap-2 px-4 py-8 lg:py-12 md:py-12 lg:pb-10 md:pb-8">
     <NuxtLink
       v-if="announcement"
       :to="announcement.to"
       :target="announcement.target"
-      class="items-center text-sm font-medium inline-flex px-0.5"
+      class="inline-flex items-center px-0.5 text-sm font-medium"
     >
       <template v-if="announcement.icon">
         <SmartIcon :name="announcement.icon" :size="16" />
@@ -26,14 +26,14 @@ defineProps<{
       <NIcon name="i-lucide-arrow-right" class="ml-1 size-4" />
     </NuxtLink>
 
-    <h1 class="font-bold text-3xl leading-tight tracking-tighter lg:leading-[1.1] md:text-4xl">
+    <h1 class="text-3xl font-bold leading-tight tracking-tighter md:text-4xl lg:leading-[1.1]">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>
-    <p class="text-base text-lg max-w-2xl font-light">
+    <p class="max-w-2xl text-lg text-base font-light">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </p>
 
-    <div class="w-full flex items-center gap-2 py-2 justify-start">
+    <div class="w-full flex items-center justify-start gap-2 py-2">
       <NButton
         v-for="(action, i) in actions"
         :key="i"

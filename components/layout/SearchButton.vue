@@ -8,11 +8,11 @@ const { enable, inAside, style, placeholder } = useConfig().value.search
     <NButton
       v-if="style === 'input'"
       btn="solid-gray"
-      class="w-full h-auto"
+      class="h-auto w-full"
       :class="[inAside ? 'mb-4' : 'md:w-40 lg:w-64']"
       @click="isOpen = true"
     >
-      <span class="overflow-hidden text-muted font-light mr-auto">
+      <span class="mr-auto overflow-hidden text-muted font-light">
         {{ placeholder }}
       </span>
       <NKbd kbd="soft">

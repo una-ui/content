@@ -9,7 +9,7 @@ const { nav } = useConfig().value.header
     <CommonNavigationMenuList>
       <CommonNavigationMenuItem v-for="(item, i) in nav" :key="i" class="relative">
         <template v-if="item.links">
-          <CommonNavigationMenuTrigger class="font-semibold bg-transparent">
+          <CommonNavigationMenuTrigger class="bg-transparent font-semibold">
             {{ item.title }}
           </CommonNavigationMenuTrigger>
           <CommonNavigationMenuContent>
@@ -32,7 +32,7 @@ const { nav } = useConfig().value.header
           </CommonNavigationMenuContent>
         </template>
         <NuxtLink v-else :to="item.to" :target="item.target">
-          <NIcon name="lucide-arrow-up-right" class="absolute text-muted right-2 top-2" size="13" />
+          <NIcon name="lucide-arrow-up-right" class="absolute right-2 top-2 text-muted" size="13" />
           <div class="bg-transparent pr-6 font-semibold" :class="navigationMenuTriggerStyle()">
             {{ item.title }}
           </div>

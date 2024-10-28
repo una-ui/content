@@ -13,7 +13,7 @@ defineProps<{
 <template>
   <div class="[&:not(:first-child)]:mt-5 group-has-[div]:mt-0">
     <NuxtLink :to="to" :target="target">
-      <CommonCard class="transition-all relative h-full" :class="[to && 'hover:bg-muted']">
+      <CommonCard class="relative h-full transition-all" :class="[to && 'hover:bg-muted']">
         <CommonCardHeader v-if="icon || title || $slots.title || description || $slots.description">
           <SmartIcon v-if="icon" class="mb-2" :name="icon" :size="24" />
           <CommonCardTitle v-if="title || $slots.title">

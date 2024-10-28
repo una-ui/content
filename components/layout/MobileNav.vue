@@ -22,7 +22,7 @@ watch(() => useRoute().path, () => {
     <CommonSheetContent side="left" class="pr-0">
       <div class="flex items-center">
         <LayoutHeaderLogo />
-        <NSeparator v-if="config.header.packageVersionNav.enable" orientation="vertical" class="h-5 mr-0" />
+        <NSeparator v-if="config.header.packageVersionNav.enable" orientation="vertical" class="mr-0 h-5" />
         <LayoutPackageVersionNav v-if="config.header.packageVersionNav.enable" />
       </div>
 

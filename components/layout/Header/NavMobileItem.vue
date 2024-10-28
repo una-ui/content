@@ -14,7 +14,7 @@ watch(isOpen, (v) => {
 <template>
   <template v-if="item.links">
     <NCollapsible v-model:open="isOpen">
-      <NCollapsibleTrigger class="w-full p-2 text-left bg-transparent">
+      <NCollapsibleTrigger class="w-full bg-transparent p-2 text-left">
         <div class="w-full flex gap-1">
           {{ item.title }}
           <Icon

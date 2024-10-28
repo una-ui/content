@@ -3,7 +3,7 @@ const { prev, next } = useContent()
 </script>
 
 <template>
-  <div class="border-t lg:flex mt-10 pt-8 lg:flex-row">
+  <div class="mt-10 border-t pt-8 lg:flex lg:flex-row">
     <LayoutPrevNextButton :prev-next="prev" side="left" />
     <span class="flex-1" />
     <LayoutPrevNextButton :prev-next="next" side="right" />

@@ -8,8 +8,8 @@ const isOpen = ref(false)
 
 <template>
   <NCollapsible v-if="variant === 'card'" v-model:open="isOpen" class="space-y-2">
-    <div class="flex items-center space-x-4 justify-between">
-      <h4 class="font-semibold text-sm">
+    <div class="flex items-center justify-between space-x-4">
+      <h4 class="text-sm font-semibold">
         <ContentSlot :use="$slots.title" unwrap="p" />
         {{ title }}
       </h4>
@@ -24,7 +24,7 @@ const isOpen = ref(false)
     </div>
 
     <NCollapsibleContent class="space-y-2">
-      <div class="px-4 text-sm rounded-md border font-mono py-3">
+      <div class="border rounded-md px-4 py-3 text-sm font-mono">
         <ContentSlot :use="$slots.content" unwrap="p" />
         <ContentSlot unwrap="p" />
       </div>
@@ -46,7 +46,7 @@ const isOpen = ref(false)
       </div>
     </NCollapsibleTrigger>
     <NCollapsibleContent>
-      <div class="py-2 ml-2 border-l pl-4">
+      <div class="ml-2 border-l py-2 pl-4">
         <ContentSlot :use="$slots.content" unwrap="p" />
         <ContentSlot unwrap="p" />
       </div>

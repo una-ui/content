@@ -11,9 +11,9 @@ defineProps<{
     :to="prevNext._path"
     class="basis-1/3"
   >
-    <div class="border transition-all space-y-2 hover:bg-muted/50 mb-4 rounded-lg p-4">
+    <div class="hover:bg-muted/50 mb-4 border rounded-lg p-4 transition-all space-y-2">
       <div class="flex flex-row gap-3">
-        <div v-if="side === 'left'" class="flex min-w-6 size-6">
+        <div v-if="side === 'left'" class="min-w-6 flex size-6">
           <Icon name="lucide:arrow-left" size="20" class="mx-auto self-center" />
         </div>
         <span class="self-center space-y-2">
