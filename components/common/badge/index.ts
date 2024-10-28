@@ -11,7 +11,7 @@ export const badgeVariants = cva(
         default:
           'border-transparent bg-primary text-primary hover:bg-primary/80',
         secondary:
-          'border-transparent bg-secondary text-secondary hover:bg-secondary/80',
+          'border-transparent bg-muted text-muted hover:bg-$c-muted/80',
         destructive:
           'border-transparent bg-destructive text-destructive hover:bg-destructive/80',
         outline: 'text-base',

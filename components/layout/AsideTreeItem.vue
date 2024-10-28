@@ -46,8 +46,11 @@ const isActive = computed(() => props.link._path === useRoute().path)
     <NuxtLink
       v-else
       :to="link._path"
-      class="w-full flex gap-1 text-muted hover:underline"
-      :class="[isActive && 'font-medium text-primary']"
+      class="w-full flex gap-1 text-muted"
+      :class="[
+        isActive && 'font-medium text-primary',
+        !isActive && 'hover:text-base',
+      ]"
     >
       <SmartIcon
         v-if="link.icon"

@@ -43,7 +43,7 @@ const icon = iconMap.get(props.filename?.toLowerCase()) || iconMap.get(props.lan
     <span v-if="!filename" class="absolute right-3 top-3 z-10">
       <CodeCopy :code="code" />
     </span>
-    <div class="bg-muted/30">
+    <div class="bg-$c-muted/30">
       <CommonScrollArea>
         <div
           class="overflow-x-auto py-3 text-sm"
