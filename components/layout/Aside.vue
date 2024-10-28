@@ -22,7 +22,7 @@ const path = computed(() => useRoute().path)
 </script>
 
 <template>
-  <CommonScrollArea orientation="vertical" class="relative h-full overflow-hidden pb-12 pr-6 pt-6 text-sm" type="hover">
+  <CommonScrollArea orientation="vertical" class="relative h-full overflow-y-hidden pb-12 pr-6 pt-6 text-sm md:pb-6" type="hover">
     <LayoutHeaderNavMobile v-if="isMobile" class="mb-5 border-b pb-2" />
     <LayoutSearchButton v-if="config.search.inAside" />
     <ul v-if="config.aside.useLevel" class="mb-1 border-b pb-4">
