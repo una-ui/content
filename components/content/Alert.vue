@@ -2,7 +2,7 @@
 const props = withDefaults(defineProps<{
   title?: string
   icon?: string
-  type?: 'default' | 'info' | 'warning' | 'success' | 'danger'
+  type?: 'default' | 'info' | 'warning' | 'success' | 'error'
   to?: string
   target?: string
   external?: boolean
@@ -13,10 +13,10 @@ const props = withDefaults(defineProps<{
 
 const typeTwClass = {
   default: '',
-  info: 'border-info-600 text-info-600 [&>svg]:text-info-600',
-  warning: 'border-warning-600 text-warning-600 [&>svg]:text-warning-600',
-  success: 'border-success-600 text-success-600 [&>svg]:text-success-600',
-  danger: 'border-error-600 text-error-600 [&>svg]:text-error-600',
+  info: 'border-sky-600/50 text-sky-600 [&>svg]:text-sky-600 bg-sky-600/10',
+  warning: 'border-warning-600/50 text-warning-600 [&>svg]:text-warning-600 bg-warning-600/10',
+  success: 'border-success-600/50 text-success-600 [&>svg]:text-success-600 bg-success-600/10',
+  error: 'border-error-600/50 text-error-600 [&>svg]:text-error-600 bg-error-600/10',
 }
 
 async function alertClick() {
