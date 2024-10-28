@@ -49,7 +49,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
         <DialogClose
           class="hover:bg-secondary absolute right-3 top-3 rounded-md p-0.5 transition-colors"
         >
-          <Icon name="lucide:x" class="block size-4" />
+          <Icon name="lucide:x" class="block square-4" />
           <span class="sr-only">Close</span>
         </DialogClose>
       </DialogContent>

@@ -86,8 +86,8 @@ function handleNavigate(delta: -1 | 1) {
               <CommonCommandGroup v-if="item.children" :heading="item.title" class="p-1.5">
                 <NuxtLink v-for="child in item.children" :key="child.id" :to="child._path">
                   <CommonCommandItem :value="child._path">
-                    <SmartIcon v-if="child.icon" :name="child.icon" class="mr-2 size-4" />
-                    <div v-else class="mr-2 size-4" />
+                    <SmartIcon v-if="child.icon" :name="child.icon" class="mr-2 square-4" />
+                    <div v-else class="mr-2 square-4" />
                     <span>{{ child.title }}</span>
                   </CommonCommandItem>
                 </NuxtLink>
@@ -96,15 +96,15 @@ function handleNavigate(delta: -1 | 1) {
             </template>
             <CommonCommandGroup heading="Theme" class="p-1.5">
               <CommonCommandItem value="light" @click="colorMode.preference = 'light'">
-                <Icon name="lucide:sun" class="mr-2 size-4" />
+                <Icon name="lucide:sun" class="mr-2 square-4" />
                 <span>Light</span>
               </CommonCommandItem>
               <CommonCommandItem value="dark" @click="colorMode.preference = 'dark'">
-                <Icon name="lucide:moon" class="mr-2 size-4" />
+                <Icon name="lucide:moon" class="mr-2 square-4" />
                 <span>Dark</span>
               </CommonCommandItem>
               <CommonCommandItem value="system" @click="colorMode.preference = 'auto'">
-                <Icon name="lucide:monitor" class="mr-2 size-4" />
+                <Icon name="lucide:monitor" class="mr-2 square-4" />
                 <span>System</span>
               </CommonCommandItem>
             </CommonCommandGroup>
@@ -120,8 +120,8 @@ function handleNavigate(delta: -1 | 1) {
               :class="[i === activeSelect && 'bg-muted']"
               @click="open = false; activeSelect = i;"
             >
-              <SmartIcon v-if="getItemIcon(item.id)" :name="getItemIcon(item.id)" class="mr-2 shrink-0 self-center size-4" />
-              <div v-else class="mr-2 shrink-0 size-4" />
+              <SmartIcon v-if="getItemIcon(item.id)" :name="getItemIcon(item.id)" class="mr-2 shrink-0 self-center square-4" />
+              <div v-else class="mr-2 shrink-0 square-4" />
 
               <span v-for="(subtitle, j) in item.titles" :key="`${subtitle}${j}`" class="flex shrink-0 self-center">
                 {{ subtitle }}
