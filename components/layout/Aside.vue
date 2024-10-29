@@ -29,7 +29,7 @@ const path = computed(() => useRoute().path)
       <li v-for="link in navigation" :key="link.id">
         <NuxtLink
           :to="link._path"
-          class="h-8 flex items-center gap-2 rounded-md hover:bg-muted p-2 text-sm text-$c-foreground/80 hover:text-primary"
+          class="h-8 flex items-center gap-2 rounded-md hover:bg-muted p-2 text-sm text-foreground/80 hover:text-primary"
           :class="[
             path.startsWith(link._path) && 'bg-muted !text-primary',
           ]"

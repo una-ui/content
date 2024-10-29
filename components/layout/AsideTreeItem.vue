@@ -22,7 +22,7 @@ const folderStyle = computed(() => link.sidebar?.style ?? defaultFolderStyle)
   <li>
     <div v-if="link.children">
       <template v-if="folderStyle === 'group'">
-        <div class="mt-2 h-8 flex items-center gap-2 rounded-md px-2 text-xs text-$c-foreground/70 font-semibold outline-none">
+        <div class="mt-2 h-8 flex items-center gap-2 rounded-md px-2 text-xs text-foreground/70 font-semibold outline-none">
           <SmartIcon
             v-if="link.icon"
             :name="link.icon"
@@ -38,7 +38,7 @@ const folderStyle = computed(() => link.sidebar?.style ?? defaultFolderStyle)
       </template>
       <template v-else>
         <button
-          class="h-8 w-full flex cursor-pointer items-center gap-2 rounded-md bg-transparent hover:bg-muted p-2 text-left text-sm text-$c-foreground/80 font-medium hover:text-primary"
+          class="h-8 w-full flex cursor-pointer items-center gap-2 rounded-md bg-transparent hover:bg-muted p-2 text-left text-sm text-foreground/80 font-medium hover:text-primary"
           @click="isOpen = !isOpen"
         >
           <SmartIcon
@@ -78,7 +78,7 @@ const folderStyle = computed(() => link.sidebar?.style ?? defaultFolderStyle)
     <NuxtLink
       v-else
       :to="link._path"
-      class="h-8 flex items-center gap-2 rounded-md hover:bg-muted p-2 text-sm text-$c-foreground/80 hover:text-primary"
+      class="h-8 flex items-center gap-2 rounded-md hover:bg-muted p-2 text-sm text-foreground/80 hover:text-primary"
       :class="[isActive && 'bg-muted !text-primary']"
     >
       <SmartIcon
