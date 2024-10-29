@@ -15,7 +15,7 @@ const config = useConfig()
         <LayoutHeaderLogo class="hidden md:flex" />
         <LayoutMobileNav />
         <LayoutHeaderLogo v-if="config.header.showTitleInMobile" class="flex md:hidden" />
-        <NSeparator v-if="config.header.packageVersionNav.enable" orientation="vertical" class="mr-0 hidden h-5 md:flex" />
+        <!-- <NSeparator v-if="config.header.packageVersionNav.enable" orientation="vertical" class="mr-0 hidden h-5 md:flex" /> -->
         <LayoutPackageVersionNav v-if="config.header.packageVersionNav.enable" class="hidden md:flex" />
       </div>
 
