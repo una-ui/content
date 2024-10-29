@@ -4,16 +4,16 @@ export { default as Badge } from './Badge.vue'
 
 // @unocss-include
 export const badgeVariants = cva(
-  'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
+  'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-base focus:ring-offset-2',
   {
     variants: {
       variant: {
         default:
-          'border-transparent bg-primary text-primary hover:bg-primary/80',
+          'border-transparent bg-primary text-inverted hover:bg-primary/80',
         secondary:
           'border-transparent bg-muted text-muted hover:bg-$c-muted/80',
         destructive:
-          'border-transparent bg-destructive text-destructive hover:bg-destructive/80',
+          'border-transparent bg-error text-error hover:bg-error/80',
         outline: 'text-base',
       },
     },

@@ -3,6 +3,7 @@ interface DefaultConfig {
     name: string
     description: string
     ogImage: string
+    ogImageComponent: string
   }
   theme: {
     customizable: boolean
@@ -36,19 +37,11 @@ interface DefaultConfig {
       to: string
       target: string
     })[]
-    packageVersionNav: {
-      label: string
-      enable: boolean
-      items: ({
-        label: string
-        to: string
-        trailing
-      })[] // NButton
-    }
   }
   aside: {
     useLevel: boolean
     collapse: boolean
+    folderStyle: 'default' | 'tree' | 'group'
   }
   main: {
     breadCrumb: boolean
@@ -63,7 +56,12 @@ interface DefaultConfig {
   }
   footer: {
     credits: string
-    links: []
+    links: ({
+      icon: string
+      title: string
+      to: string
+      target: string
+    })[]
   }
   toc: {
     enable: boolean
@@ -98,3 +96,5 @@ type Color =
   | 'blue'
   | 'yellow'
   | 'violet'
+
+type Target = '_blank' | '_parent' | '_self' | '_top' | (string & object) | null | undefined
