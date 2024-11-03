@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { page } = useContent()
 const config = useConfig()
+const location = Math.floor(Math.random() * 80) + 10
 
 useSeoMeta({
   title: `${page.value?.title ?? '404'} - ${config.value.site.name}`,
@@ -78,4 +79,9 @@ useSeoMeta({
       </div>
     </div>
   </main>
+
+  <CommonEllipsis
+    :colors="['rgba(var(--una-primary))', 'rgba(var(--una-primary), 0.5)', 'rgba(var(--una-primary), 0.6)']"
+    height="20rem" width="20rem" top="60rem" left="-10rem" blur="10rem"
+  />
 </template>
