@@ -11,9 +11,9 @@ defineProps<{
     :to="prevNext._path"
     class="basis-1/3"
   >
-    <div class="hover:bg-$c-muted/50 mb-4 border rounded-lg p-4 transition-all space-y-2">
+    <div class="mb-4 border rounded-lg p-4 transition-all space-y-2 hover:bg-$c-muted/50">
       <div class="flex flex-row gap-3">
-        <div v-if="side === 'left'" class="min-w-6 flex square-6">
+        <div v-if="side === 'left'" class="min-w-6 square-6 flex">
           <Icon name="lucide:arrow-left" size="20" class="mx-auto self-center" />
         </div>
         <span class="self-center space-y-2">
@@ -24,7 +24,7 @@ defineProps<{
             {{ prevNext.description }}
           </div>
         </span>
-        <div v-if="side === 'right'" class="ml-auto min-w-6 flex square-6">
+        <div v-if="side === 'right'" class="ml-auto min-w-6 square-6 flex">
           <Icon name="lucide:arrow-right" size="20" class="mx-auto self-center" />
         </div>
       </div>

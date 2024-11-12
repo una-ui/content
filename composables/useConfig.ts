@@ -6,6 +6,7 @@ const defaultConfig: DefaultConfig = {
     name: 'UnaUI Content',
     description: 'Craft visually appealing content effortlessly using Una UI',
     ogImage: '/hero.png',
+    ogImageComponent: 'Hero',
   },
   theme: {
     customizable: true,
@@ -34,6 +35,7 @@ const defaultConfig: DefaultConfig = {
   aside: {
     useLevel: true,
     collapse: false,
+    folderStyle: 'default',
   },
   main: {
     breadCrumb: true,

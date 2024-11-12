@@ -37,6 +37,15 @@ interface DefaultConfig {
       to: string
       target: string
     })[]
+    packageVersionNav: {
+      enable: boolean
+      label: string
+      items: ({
+        label: string
+        to: string
+        trailing: string
+      })[]
+    }
   }
   aside: {
     useLevel: boolean
@@ -57,8 +66,7 @@ interface DefaultConfig {
   footer: {
     credits: string
     links: ({
-      icon: string
-      title: string
+      label: string
       to: string
       target: string
     })[]

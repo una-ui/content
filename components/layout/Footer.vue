@@ -11,13 +11,19 @@ const { footer } = useConfig().value
 
       <span class="flex-1" />
 
-      <NButton
-        v-for="(link, i) in footer.links"
-        :key="i"
-        btn="ghost-gray"
-        class="flex gap-2"
-        v-bind="link"
-      />
+      <template
+        v-if="footer.links"
+      >
+        <NButton
+          v-for="(link, i) in footer.links"
+          v-bind="link"
+          :key="i"
+          icon
+          square
+          btn="ghost-gray"
+          class="flex gap-2"
+        />
+      </template>
     </div>
   </footer>
 </template>
