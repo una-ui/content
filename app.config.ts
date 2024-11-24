@@ -96,7 +96,7 @@ export default defineAppConfig({
       codeCopyToast: true,
       editLink: {
         enable: true,
-        pattern: 'https://github.com/una-ui/una-ui/tree/main/content/:path',
+        pattern: 'https://github.com/una-ui/content/tree/main/content/:path',
         text: 'Edit this page',
         icon: 'lucide:square-pen',
         placement: ['docsFooter', 'toc'],
