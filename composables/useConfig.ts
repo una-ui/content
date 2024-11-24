@@ -6,7 +6,7 @@ const defaultConfig: DefaultConfig = {
     name: 'UnaUI Content',
     description: 'Craft visually appealing content effortlessly using Una UI',
     ogImage: '/hero.png',
-    ogImageComponent: 'Hero',
+    ogImageComponent: 'UnaUIContent',
   },
   theme: {
     customizable: true,
