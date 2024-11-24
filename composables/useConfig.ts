@@ -44,6 +44,13 @@ const defaultConfig: DefaultConfig = {
     codeCopyToastText: 'Copied to clipboard!',
     fieldRequiredText: 'required',
     padded: true,
+    editLink: {
+      enable: false,
+      pattern: '',
+      text: 'Edit this page',
+      icon: 'lucide:square-pen',
+      placement: ['docsFooter'],
+    },
     codeIcon: {
       'package.json': 'vscode-icons:file-type-node',
       'tsconfig.json': 'vscode-icons:file-type-tsconfig',

@@ -62,6 +62,13 @@ interface DefaultConfig {
       [key: string]: string
     }
     padded: boolean
+    editLink: {
+      enable: boolean
+      pattern: string
+      text: string
+      icon: string
+      placement: ('docsFooter' | 'toc')[]
+    }
   }
   footer: {
     credits: string

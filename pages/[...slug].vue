@@ -9,6 +9,11 @@ useSeoMeta({
   ogDescription: page.value?.description,
   twitterCard: 'summary_large_image',
 })
+
+defineOgImageComponent(config.value.site.ogImageComponent, {
+  title: page.value?.title,
+  description: page.value?.description,
+})
 </script>
 
 <template>
@@ -27,33 +32,16 @@ useSeoMeta({
   <main
     v-else
     class="relative py-6"
-    :class="[config.toc.enable && (page.toc ?? true) && 'lg:grid lg:grid-cols-[1fr_200px] lg:gap-10 lg:py-8']"
+    :class="[config.toc.enable && (page.toc ?? true) && 'lg:grid lg:grid-cols-[1fr_220px] lg:gap-14 lg:py-8']"
   >
     <div class="mx-auto min-w-0 w-full">
       <LayoutBreadcrumb v-if="page?.body && config.main.breadCrumb" class="mb-4" />
-
-      <div v-if="config.main.showTitle" class="mb-6">
-        <ProseH1>
-          {{ page?.title }}
-        </ProseH1>
-        <p class="pt-1 text-lg text-muted">
-          {{ page?.description }}
-        </p>
-
-        <div class="flex gap-2 pt-4">
-          <NuxtLink
-            v-for="(badge, i) in page?.badges"
-            :key="i"
-            :to="badge.to"
-            :target="badge.target"
-          >
-            <CommonBadge :variant="badge.variant || 'secondary'" :type="badge.type" class="gap-1 rounded-md">
-              {{ badge.value }}
-              <SmartIcon v-if="badge.to || badge.icon" :size="12" :name="badge.icon || 'lucide:external-link'" />
-            </CommonBadge>
-          </NuxtLink>
-        </div>
-      </div>
+      <LayoutTitle
+        v-if="config.main.showTitle"
+        :title="page?.title"
+        :description="page?.description"
+        :badges="page?.badges"
+      />
 
       <Alert
         v-if="page?.body?.children?.length === 0"
@@ -70,7 +58,7 @@ useSeoMeta({
         class="docs-content"
       />
 
-      <LayoutPrevNext />
+      <LayoutDocsFooter />
     </div>
     <div v-if="config.toc.enable && (page.toc ?? true)" class="hidden text-sm lg:block">
       <div class="sticky top-[90px] h-[calc(100vh-3.5rem)] overflow-hidden">

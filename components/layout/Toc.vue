@@ -1,10 +1,26 @@
 <script setup lang="ts">
 defineProps<{ isSmall: boolean }>()
 
+const { url, enabledToc, text, icon } = useEditLink()
+
 const { toc } = useContent()
-const { title, links } = useConfig().value.toc
+const { title, links: configLinks } = useConfig().value.toc
 const { border } = useConfig().value.header
 const isOpen = ref(false)
+
+const links = computed(
+  () => {
+    if (enabledToc.value) {
+      return configLinks.concat([{
+        title: text,
+        icon,
+        to: url.value,
+        target: '_blank',
+      }])
+    }
+    return configLinks
+  },
+)
 </script>
 
 <template>

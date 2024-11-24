@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@una-ui/nuxt',
     'nuxt-content-snippet',
+    'nuxt-og-image',
   ],
   components: {
     dirs: [
