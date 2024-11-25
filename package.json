@@ -2,7 +2,7 @@
   "name": "@una-ui/content",
   "type": "module",
   "version": "0.0.39",
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.2",
   "description": "Craft visually appealing content effortlessly using Una UI",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
   "license": "MIT",
@@ -62,25 +62,25 @@
     "@una-ui/nuxt": "npm:@una-ui/nuxt-edge@0.28.0-beta.1-28869929.09e08ec",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.14.1592",
     "nuxt-content-snippet": "^1.0.0",
     "nuxt-og-image": "^4.0.0",
     "radix-vue": "^1.9.10",
     "tailwind-merge": "^2.5.4",
-    "typescript": "^5.6.3",
+    "typescript": "5.6.3",
     "ufo": "^1.5.4",
     "unocss": "^0.63.6",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.7.3",
+    "@antfu/eslint-config": "^3.8.0",
     "@nuxt/devtools": "^1.5.2",
     "@unocss/eslint-plugin": "^0.63.6",
     "@unocss/extractor-mdc": "^0.63.6",
     "@vueuse/core": "^11.1.0",
     "eslint": "^9.12.0",
     "shiki": "^1.21.1",
-    "vue-tsc": "^2.1.10"
+    "vue-tsc": "2.1.10"
   }
 }
