@@ -13,7 +13,7 @@ importers:
         version: 1.2.1
       '@iconify-json/lucide':
         specifier: ^1.2.15
-        version: 1.2.15
+        version: 1.2.16
       '@iconify-json/radix-icons':
         specifier: ^1.2.1
         version: 1.2.1
@@ -843,8 +843,8 @@ packages:
   '@iconify-json/heroicons@1.2.1':
     resolution: {integrity: sha512-TkKfS5U27kE5MXmSGLzPoz95BP5VA9xEJXwJFwmPMVLX+xyWq0OkoiWTUXB0uAoQODpb8BaRpzSydItrq9fIRA==}
 
-  '@iconify-json/lucide@1.2.15':
-    resolution: {integrity: sha512-mbHlTJRqOrqRk8E8xnpPzqZwCqsKNB9ZyITqDEYEtePEGxki9VJWJMU8JcNqRKDfPS9vlFsjwepUuOGgusmZUA==}
+  '@iconify-json/lucide@1.2.16':
+    resolution: {integrity: sha512-3uZ6/zjAMbAH44Xdfn3ZI+ATKIYK9wuQ0KYVkXYuh3DDU6NZMGq3bCzr9z3/jjAfb3d8AMMAxAzkHSjLGKcq1w==}
 
   '@iconify-json/radix-icons@1.2.1':
     resolution: {integrity: sha512-glzHFq3Sj9QKUQG7u2dnlC+KPJGpGM1GhyUIrFFWhXqr9CZgkUPnF5n/6YlbCkYGMa+feSwdhwroLTfKvaAaVA==}
@@ -6067,7 +6067,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.2.15':
+  '@iconify-json/lucide@1.2.16':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -7046,7 +7046,7 @@ snapshots:
     dependencies:
       '@headlessui/vue': 1.7.23(vue@3.5.13(typescript@5.7.2))
       '@iconify-json/heroicons': 1.2.1
-      '@iconify-json/lucide': 1.2.15
+      '@iconify-json/lucide': 1.2.16
       '@iconify-json/radix-icons': 1.2.1
       '@iconify-json/tabler': 1.2.8
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.4)
