@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import type { ToastCloseProps } from 'radix-vue'
+import type { HTMLAttributes } from 'vue'
 import { cn } from '@/lib/utils'
-import { ToastClose, type ToastCloseProps } from 'radix-vue'
-import { computed, type HTMLAttributes } from 'vue'
+import { ToastClose } from 'radix-vue'
+import { computed } from 'vue'
 
 const props = defineProps<ToastCloseProps & {
   class?: HTMLAttributes['class']
