@@ -2,7 +2,7 @@
 import { useMagicKeys } from '@vueuse/core'
 import { VisuallyHidden } from 'radix-vue'
 
-const open = defineModel<boolean>('open')
+const open = defineModel<boolean>('open', { default: false })
 const colorMode = useColorMode()
 const { placeholderDetailed } = useConfig().value.search
 

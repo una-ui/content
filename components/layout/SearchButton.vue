@@ -29,5 +29,5 @@ const { enable, inAside, style, placeholder } = useConfig().value.search
     />
   </template>
 
-  <LayoutSearchDialog v-model="isOpen" />
+  <LayoutSearchDialog v-model:open="isOpen" />
 </template>
