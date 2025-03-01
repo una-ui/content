@@ -120,8 +120,8 @@ function handleNavigate(delta: -1 | 1) {
               :class="[i === activeSelect && 'bg-muted']"
               @click="open = false; activeSelect = i;"
             >
-              <SmartIcon v-if="getItemIcon(item.id)" :name="getItemIcon(item.id)" class="mr-2 square-4 shrink-0 self-center" />
-              <div v-else class="mr-2 square-4 shrink-0" />
+              <SmartIcon v-if="getItemIcon(item.id)" :name="getItemIcon(item.id)" class="mr-2 shrink-0 self-center square-4" />
+              <div v-else class="mr-2 shrink-0 square-4" />
 
               <span v-for="(subtitle, j) in item.titles" :key="`${subtitle}${j}`" class="flex shrink-0 self-center">
                 {{ subtitle }}
