@@ -19,6 +19,9 @@ export default defineNuxtConfig({
     enabled: true,
     componentInspector: false,
   },
+  routeRules: {
+    '/': { prerender: true },
+  },
   content: {
     documentDriven: true,
     highlight: {
