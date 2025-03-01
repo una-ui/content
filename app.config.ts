@@ -2,7 +2,11 @@ import pkg from './package.json'
 
 export default defineAppConfig({
   unaContent: {
+    theme: {
+      border: 'dashed',
+    },
     header: {
+      border: true,
       darkModeToggle: true,
       showLoadingIndicator: true,
       showLogo: true,
@@ -87,6 +91,7 @@ export default defineAppConfig({
       ],
     },
     aside: {
+      border: true,
       useLevel: true,
       collapse: false,
     },
@@ -158,6 +163,7 @@ export default defineAppConfig({
       ],
     },
     toc: {
+      border: true,
       enable: true,
       title: 'On This Page',
       links: [{

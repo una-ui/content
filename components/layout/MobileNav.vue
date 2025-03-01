@@ -19,7 +19,7 @@ watch(() => useRoute().path, () => {
         label="i-lucide-menu"
       />
     </CommonSheetTrigger>
-    <CommonSheetContent side="left" class="pr-0">
+    <CommonSheetContent side="left" class="border-r border-dashed pr-0">
       <div class="flex items-end">
         <LayoutHeaderLogo />
         <LayoutPackageVersionNav v-if="config.header.packageVersionNav.enable" />

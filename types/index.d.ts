@@ -9,6 +9,7 @@ interface DefaultConfig {
     customizable: boolean
     color: Color
     radius: number
+    border: 'dashed' | 'solid'
   }
   header: {
     showLoadingIndicator: boolean
@@ -48,6 +49,7 @@ interface DefaultConfig {
     }
   }
   aside: {
+    border: boolean
     useLevel: boolean
     collapse: boolean
     folderStyle: 'default' | 'tree' | 'group'

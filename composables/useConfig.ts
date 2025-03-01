@@ -12,6 +12,7 @@ const defaultConfig: DefaultConfig = {
     customizable: true,
     color: 'zinc',
     radius: 0.5,
+    border: 'solid',
   },
   header: {
     showLoadingIndicator: true,
@@ -33,6 +34,7 @@ const defaultConfig: DefaultConfig = {
     },
   },
   aside: {
+    border: false,
     useLevel: true,
     collapse: false,
     folderStyle: 'default',

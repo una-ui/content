@@ -5,11 +5,18 @@ const config = useConfig()
 <template>
   <header
     class="sticky top-0 z-40 bg-background/80 backdrop-blur-lg"
-    :class="{ 'lg:border-b': config.header.border }"
+    :class="{
+      'lg:border-b': config.header.border,
+      'border-dashed': config.theme.border === 'dashed',
+    }"
   >
     <div
       class="h-14 flex items-center justify-between gap-2 px-4 md:px-8"
-      :class="{ 'border-b lg:border-none': config.header.border, 'container max-w-screen-2xl': config.main.padded }"
+      :class="{
+        'container max-w-screen-2xl': config.main.padded,
+        'border-b lg:border-none': config.header.border,
+        'border-dashed': config.theme.border === 'dashed',
+      }"
     >
       <div class="flex flex-1 items-center">
         <LayoutHeaderLogo class="hidden md:flex" />
