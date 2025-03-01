@@ -46,6 +46,7 @@ const defaultConfig: DefaultConfig = {
     codeCopyToastText: 'Copied to clipboard!',
     fieldRequiredText: 'required',
     padded: true,
+    backToTop: true,
     editLink: {
       enable: false,
       pattern: '',

@@ -96,6 +96,7 @@ export default defineAppConfig({
       collapse: false,
     },
     main: {
+      backToTop: true,
       breadCrumb: true,
       showTitle: true,
       codeCopyToast: true,

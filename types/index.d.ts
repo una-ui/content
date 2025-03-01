@@ -71,6 +71,7 @@ interface DefaultConfig {
       icon: string
       placement: ('docsFooter' | 'toc')[]
     }
+    backToTop: boolean
   }
   footer: {
     credits: string
