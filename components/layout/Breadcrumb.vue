@@ -9,12 +9,13 @@ const breadcrumbs = computed(() => useBreadcrumb(route.path))
     <CommonBreadcrumbList>
       <template v-for="(breadcrumb, index) in breadcrumbs" :key="breadcrumb.title">
         <CommonBreadcrumbItem>
-          <CommonBreadcrumbLink
-            :href="index === 0 ? undefined : breadcrumb.href"
-            :class="{ 'text-base': index === breadcrumbs.length - 1 }"
+          <NLink
+            :to="index === 0 ? undefined : breadcrumb.href"
+            class="transition-colors hover:text-foreground"
+            :class="{ 'text-foreground': index === breadcrumbs.length - 1 }"
           >
             {{ breadcrumb.title }}
-          </CommonBreadcrumbLink>
+          </NLink>
         </CommonBreadcrumbItem>
         <CommonBreadcrumbSeparator v-if="index !== breadcrumbs.length - 1" />
       </template>
