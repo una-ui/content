@@ -26,7 +26,6 @@ useSeoMeta({
       class="flex-1 items-start px-4 md:grid lg:grid-cols-[240px_minmax(0,1fr)] md:grid-cols-[220px_minmax(0,1fr)] lg:gap-10 md:gap-6 md:px-8"
       :class="[
         config.main.padded && 'container',
-        config.header.border && 'border-r',
         config.theme.border === 'dashed' && 'border-dashed',
       ]"
     >
