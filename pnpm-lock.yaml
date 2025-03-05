@@ -84,6 +84,9 @@ importers:
       '@nuxt/devtools':
         specifier: ^2.1.1
         version: 2.1.1(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.3))
+      '@unocss/core':
+        specifier: 66.0.0
+        version: 66.0.0
       '@unocss/eslint-plugin':
         specifier: ^66.0.0
         version: 66.0.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.6.3)

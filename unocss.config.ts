@@ -1,11 +1,7 @@
 import una from '@una-ui/nuxt/una.config'
-import extractorMdc from '@unocss/extractor-mdc'
-import { defineConfig } from 'unocss'
+import { mergeConfigs } from '@unocss/core'
 
-export default defineConfig({
-  ...una({
-    extractors: [extractorMdc()],
-  }),
+export default mergeConfigs([una(), {
   content: {
     pipeline: {
       include: [
@@ -14,4 +10,4 @@ export default defineConfig({
     },
     filesystem: ['content/**/*.md'],
   },
-})
+}])
