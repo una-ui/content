@@ -38,9 +38,15 @@ importers:
       '@nuxt/image':
         specifier: ^1.9.0
         version: 1.9.0(db0@0.2.4(better-sqlite3@11.8.1))(ioredis@5.5.0)(magicast@0.3.5)
+      '@una-ui/extractor-vue-script':
+        specifier: npm:@una-ui/extractor-vue-script-edge
+        version: '@una-ui/extractor-vue-script-edge@0.39.0-beta.1-29019299.400d023'
       '@una-ui/nuxt':
         specifier: npm:@una-ui/nuxt-edge
         version: '@una-ui/nuxt-edge@0.39.0-beta.1-29019299.400d023(@unocss/preset-wind@66.0.0)(@unocss/webpack@66.0.0(webpack@5.98.0))(change-case@5.4.4)(fuse.js@7.1.0)(magicast@0.3.5)(nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.8)(better-sqlite3@11.8.1)(db0@0.2.4(better-sqlite3@11.8.1))(eslint@9.21.0(jiti@2.4.2))(ioredis@5.5.0)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.9)(terser@5.39.0)(tsx@4.19.3)(typescript@5.6.3)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))(vue-tsc@2.1.10(typescript@5.6.3))(yaml@2.7.0))(postcss@8.5.3)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.98.0)(zod@3.24.2)'
+      '@una-ui/preset':
+        specifier: npm:@una-ui/preset-edge
+        version: '@una-ui/preset-edge@0.39.0-beta.1-29019299.400d023(@unocss/webpack@66.0.0(webpack@5.98.0))(postcss@8.5.3)(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.3))'
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
