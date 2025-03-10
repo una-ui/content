@@ -23,7 +23,9 @@ export default defineNuxtConfig({
     '/': { prerender: true },
   },
   content: {
-    documentDriven: true,
+    documentDriven: {
+      injectPage: false,
+    },
     highlight: {
       theme: {
         default: 'github-light',
