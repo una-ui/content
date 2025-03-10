@@ -1,7 +1,7 @@
 {
   "name": "@una-ui/content",
   "type": "module",
-  "version": "43.0.0",
+  "version": "44.0.0",
   "packageManager": "pnpm@10.5.2",
   "description": "Craft visually appealing content effortlessly using Una UI",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
