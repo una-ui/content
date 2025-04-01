@@ -2,7 +2,7 @@
   "name": "@una-ui/content",
   "type": "module",
   "version": "45.1.0",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.7.1",
   "description": "Craft visually appealing content effortlessly using Una UI",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
   "license": "MIT",
