@@ -16,8 +16,8 @@ const isOpen = ref(false)
       <NCollapsibleTrigger as-child>
         <NButton
           name="i-lucide-chevrons-up-down"
-          square
-          icon
+
+          icon square
           btn="ghost-gray"
         />
       </NCollapsibleTrigger>
