@@ -43,6 +43,7 @@
     "reset": "pnpm store prune && rm -rf .nuxt dist node_modules pnpm-lock.yaml && pnpm install",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "prepare": "nuxt prepare",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
