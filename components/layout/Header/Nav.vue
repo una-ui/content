@@ -9,7 +9,7 @@ const { nav } = useConfig().value.header
     <CommonNavigationMenuList>
       <CommonNavigationMenuItem v-for="(item, i) in nav" :key="i" class="relative">
         <template v-if="item.links">
-          <CommonNavigationMenuTrigger class="bg-transparent font-semibold">
+          <CommonNavigationMenuTrigger class="h-8 bg-transparent font-semibold">
             {{ item.title }}
           </CommonNavigationMenuTrigger>
           <CommonNavigationMenuContent>

@@ -7,8 +7,8 @@ const { enable, inAside, style, placeholder } = useConfig().value.search
   <template v-if="enable">
     <NButton
       v-if="style === 'input'"
-      btn="solid-white"
-      class="h-auto w-full"
+      btn="solid-gray"
+      class="h-8 w-full p-2"
       :class="[inAside ? 'mb-4' : 'md:w-40 lg:w-64']"
       @click="isOpen = true"
     >
@@ -23,7 +23,6 @@ const { enable, inAside, style, placeholder } = useConfig().value.search
       v-else
       btn="ghost-gray"
       icon
-      square
       label="i-lucide-search"
       @click="isOpen = true"
     />

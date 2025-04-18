@@ -9,9 +9,9 @@ function toggleDark() {
   <NButton
     btn="ghost-gray"
     class="text-base"
-    square
+    square="8"
     icon
-    label="i-radix-icons-sun dark:i-radix-icons-moon"
+    label="dark:i-radix-icons-sun i-radix-icons-moon"
     aria-label="Color Mode"
     @click="toggleDark"
   />

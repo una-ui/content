@@ -30,19 +30,30 @@ const config = useConfig()
 
       <div class="flex flex-1 justify-end gap-2">
         <LayoutSearchButton v-if="!config.search.inAside" />
-        <div class="inline-flex gap-1">
+        <div class="inline-flex">
           <NButton
             v-for="(link, i) in config.header.links"
             :key="i"
             btn="ghost-gray"
             class="hidden text-base md:flex"
             v-bind="link"
-            square
+            square="8"
             icon
             :label="link.icon"
           />
           <DarkModeToggle v-if="config.header.darkModeToggle" />
-          <NThemeSwitcher v-if="config.theme.customizable" />
+
+          <NThemeSwitcher v-if="config.theme.customizable">
+            <template #trigger="{ open }">
+              <NButton
+                :btn="open ? 'soft-gray' : 'ghost-gray'"
+                icon
+                class="text-base"
+                square="8"
+                label="i-lucide-paintbrush"
+              />
+            </template>
+          </NThemeSwitcher>
         </div>
       </div>
     </div>
