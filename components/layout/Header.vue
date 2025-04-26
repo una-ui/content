@@ -41,6 +41,7 @@ const config = useConfig()
             icon
             :label="link.icon"
           />
+
           <DarkModeToggle v-if="config.header.darkModeToggle" />
 
           <NThemeSwitcher v-if="config.theme.customizable">
@@ -48,7 +49,7 @@ const config = useConfig()
               <NButton
                 :btn="open ? 'soft-gray' : 'ghost-gray'"
                 icon
-                class="text-base"
+                class="text-primary"
                 square="8"
                 label="i-lucide-paintbrush"
               />
