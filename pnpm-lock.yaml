@@ -38,6 +38,9 @@ importers:
       '@nuxt/image':
         specifier: ^1.9.0
         version: 1.10.0(@netlify/blobs@8.2.0)(db0@0.3.2)(ioredis@5.6.1)(magicast@0.3.5)
+      '@nuxt/kit':
+        specifier: ^3.17.1
+        version: 3.17.1(magicast@0.3.5)
       '@una-ui/nuxt':
         specifier: npm:@una-ui/nuxt-edge
         version: '@una-ui/nuxt-edge@0.52.1-29102745.8b48a21(@unocss/preset-wind3@66.0.0)(@unocss/webpack@66.0.0(webpack@5.99.7))(fuse.js@7.1.0)(jwt-decode@4.0.0)(magicast@0.3.5)(nuxt@3.17.1(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.3)(db0@0.3.2)(eslint@9.25.1(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.1)(terser@5.39.0)(typescript@5.6.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.1.10(typescript@5.6.3))(yaml@2.7.1))(postcss@8.5.3)(typescript@5.6.3)(vite@6.3.4(@types/node@22.15.3)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.6.3))(webpack@5.99.7)(zod@3.24.3)'

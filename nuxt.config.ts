@@ -1,8 +1,9 @@
-import { dirname, join, resolve } from 'node:path'
-
+import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createResolver } from '@nuxt/kit'
 import { defineNuxtConfig } from 'nuxt/config'
 
+const { resolve } = createResolver(import.meta.url)
 const currentDir = dirname(fileURLToPath(import.meta.url))
 export default defineNuxtConfig({
   modules: [
@@ -35,7 +36,7 @@ export default defineNuxtConfig({
   nitro: {
     publicAssets: [
       {
-        dir: resolve('./public/assets/fonts'),
+        dir: resolve(currentDir, './public/assets/fonts'),
         maxAge: 24 * 60 * 60 * 365, // 1 year (versioned)
         baseURL: '/fonts',
       },
