@@ -1,7 +1,7 @@
-import una from '@una-ui/nuxt/una.config'
-import { mergeConfigs } from '@unocss/core'
+import { defaultConfig } from '@una-ui/nuxt/una.config'
+import { presetWebFonts } from 'unocss'
 
-export default mergeConfigs([una(), {
+export default defaultConfig({
   content: {
     pipeline: {
       include: [
@@ -10,4 +10,14 @@ export default mergeConfigs([una(), {
     },
     filesystem: ['content/**/*.md'],
   },
-}])
+
+  presets: [
+    presetWebFonts({
+      provider: 'none',
+      fonts: {
+        sans: 'Geist',
+        mono: 'GeistMono',
+      },
+    }),
+  ],
+})
