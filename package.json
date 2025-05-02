@@ -36,7 +36,8 @@
     "nuxt.config.ts",
     "pages",
     "public",
-    "types"
+    "types",
+    "unocss.config.ts"
   ],
   "scripts": {
     "build": "nuxt build",
