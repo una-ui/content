@@ -11,7 +11,7 @@ function toggleDark() {
     class="text-base"
     square="8"
     icon
-    label="dark:i-radix-icons-sun i-radix-icons-moon"
+    label="i-tabler-brightness"
     aria-label="Color Mode"
     @click="toggleDark"
   />
