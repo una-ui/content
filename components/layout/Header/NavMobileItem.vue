@@ -30,7 +30,7 @@ watch(isOpen, (v) => {
             <NuxtLink
               :to="link.to"
               :target="link.to"
-              class="mb-1 block w-full gap-2 rounded-md hover:bg-muted px-3 py-2 transition-all"
+              class="mb-1 block w-full gap-2 rounded-md px-3 py-2 transition-all hover:bg-muted"
             >
               <div class="font-semibold">
                 {{ link.title }}

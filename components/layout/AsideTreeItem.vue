@@ -38,7 +38,7 @@ const folderStyle = computed(() => link.sidebar?.style ?? defaultFolderStyle)
       </template>
       <template v-else>
         <button
-          class="h-8 w-full flex cursor-pointer items-center gap-2 rounded-md bg-transparent hover:bg-muted p-2 text-left text-sm text-foreground/80 font-medium hover:text-primary"
+          class="h-8 w-full flex cursor-pointer items-center gap-2 rounded-md bg-transparent p-2 text-left text-sm text-foreground/80 font-medium hover:bg-muted hover:text-primary"
           @click="isOpen = !isOpen"
         >
           <SmartIcon
@@ -78,7 +78,7 @@ const folderStyle = computed(() => link.sidebar?.style ?? defaultFolderStyle)
     <NuxtLink
       v-else
       :to="link._path"
-      class="h-8 flex items-center gap-2 rounded-md hover:bg-muted p-2 text-sm text-foreground/80 hover:text-primary"
+      class="h-8 flex items-center gap-2 rounded-md p-2 text-sm text-foreground/80 hover:bg-muted hover:text-primary"
       :class="[isActive && 'bg-muted !text-primary']"
     >
       <SmartIcon

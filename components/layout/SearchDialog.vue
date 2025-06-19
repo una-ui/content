@@ -116,7 +116,7 @@ function handleNavigate(delta: -1 | 1) {
               :id="i"
               :key="item.id"
               :to="item.id"
-              class="flex select-none rounded-md hover:bg-muted p-2 hover:cursor-pointer"
+              class="flex select-none rounded-md p-2 hover:cursor-pointer hover:bg-muted"
               :class="[i === activeSelect && 'bg-muted']"
               @click="open = false; activeSelect = i;"
             >

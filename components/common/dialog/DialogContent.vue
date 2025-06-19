@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { DialogContentEmits, DialogContentProps } from 'radix-vue'
 import type { HTMLAttributes } from 'vue'
-import { cn } from '@/lib/utils'
 import {
   DialogClose,
   DialogContent,
@@ -11,6 +10,7 @@ import {
   useForwardPropsEmits,
 } from 'radix-vue'
 import { computed } from 'vue'
+import { cn } from '@/lib/utils'
 
 const props = defineProps<DialogContentProps & { class?: HTMLAttributes['class'] }>()
 const emits = defineEmits<DialogContentEmits>()
@@ -27,7 +27,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
 <template>
   <DialogPortal>
     <DialogOverlay
-      class="fixed inset-0 z-50 data-[state=closed]:animate-out data-[state=open]:animate-in bg-black/80 data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0"
+      class="fixed inset-0 z-50 bg-black/80 data-[state=closed]:animate-out data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0"
     />
     <DialogContent
       v-bind="forwarded"
@@ -39,7 +39,7 @@ const forwarded = useForwardPropsEmits(delegatedProps, emits)
     >
       <slot />
       <DialogClose
-        class="absolute right-4 top-4 rounded-sm bg-base data-[state=open]:text-muted opacity-70 focus:ring-base ring-offset-base transition-opacity disabled:pointer-events-none hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2"
+        class="absolute right-4 top-4 rounded-sm bg-base opacity-70 ring-offset-base transition-opacity disabled:pointer-events-none data-[state=open]:text-muted hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-base"
       >
         <Icon name="lucide:x" class="block square-4" />
         <span class="sr-only">Close</span>
