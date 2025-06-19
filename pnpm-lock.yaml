@@ -88,8 +88,8 @@ importers:
         specifier: ^2.1.1
         version: 2.5.0(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.6.3))
       '@unocss/core':
-        specifier: 66.0.0
-        version: 66.0.0
+        specifier: 66.2.3
+        version: 66.2.3
       '@unocss/eslint-plugin':
         specifier: ^66.0.0
         version: 66.2.3(eslint@9.29.0(jiti@2.4.2))(typescript@5.6.3)
@@ -1496,9 +1496,6 @@ packages:
   '@unocss/config@66.2.3':
     resolution: {integrity: sha512-Xd2P1NgD7poYKDMI176yPvmMojBbc1HH26dgG8OYpNiBuzdhdLuyfSLPbpAOXPSyoK8Fu2BikS+NLTWQ8MmgFQ==}
     engines: {node: '>=14'}
-
-  '@unocss/core@66.0.0':
-    resolution: {integrity: sha512-PdVbSMHNDDkr++9nkqzsZRAkaU84gxMTEgYbqI7dt2p1DXp/5tomVtmMsr2/whXGYKRiUc0xZ3p4Pzraz8TcXA==}
 
   '@unocss/core@66.2.3':
     resolution: {integrity: sha512-mRpwm3HUAqCtQrBB7+vkCp0qDZT+G1s2EAVJIF6zzrnoqb2BmIlHgz7DXVDufRFMRJtQUCp2jVMtEQZCTXEVjQ==}
@@ -7483,7 +7480,7 @@ snapshots:
       '@tanstack/vue-table': 8.21.3(vue@3.5.17(typescript@5.6.3))
       '@una-ui/extractor-vue-script': '@una-ui/extractor-vue-script-edge@1.0.0-alpha.0-29172721.c5fd9aa'
       '@una-ui/preset': '@una-ui/preset-edge@1.0.0-alpha.0-29172721.c5fd9aa(@unocss/webpack@66.2.3(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.6.3))'
-      '@unocss/core': 66.0.0
+      '@unocss/core': 66.2.3
       '@unocss/nuxt': 66.2.3(magicast@0.3.5)(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.6.3))(webpack@5.99.9)
       '@unocss/preset-attributify': 66.2.3
       '@unocss/preset-icons': 66.2.3
@@ -7528,7 +7525,7 @@ snapshots:
 
   '@una-ui/preset-edge@1.0.0-alpha.0-29172721.c5fd9aa(@unocss/webpack@66.2.3(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.6.3))':
     dependencies:
-      '@unocss/core': 66.0.0
+      '@unocss/core': 66.2.3
       '@unocss/preset-mini': 66.2.3
       unocss: 66.2.3(@unocss/webpack@66.2.3(webpack@5.99.9))(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(terser@5.43.1)(yaml@2.8.0))(vue@3.5.17(typescript@5.6.3))
     transitivePeerDependencies:
@@ -7604,8 +7601,6 @@ snapshots:
     dependencies:
       '@unocss/core': 66.2.3
       unconfig: 7.3.2
-
-  '@unocss/core@66.0.0': {}
 
   '@unocss/core@66.2.3': {}
 
