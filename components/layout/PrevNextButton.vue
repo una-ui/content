@@ -20,7 +20,7 @@ defineProps<{
           <div class="text-lg font-semibold">
             {{ prevNext.title }}
           </div>
-          <div v-if="prevNext.description" class="text-muted-foreground text-sm">
+          <div v-if="prevNext.description" class="text-sm text-muted-foreground">
             {{ prevNext.description }}
           </div>
         </span>
