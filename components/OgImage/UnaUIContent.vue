@@ -28,7 +28,7 @@ const { logo, title: siteTitle, showTitle } = useConfig().value.header
       <h1 class="text-8xl font-bold">
         {{ title }}
       </h1>
-      <p class="text-4xl text-muted leading-tight">
+      <p class="text-muted-foreground text-4xl leading-tight">
         {{ description }}
       </p>
     </div>

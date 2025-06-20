@@ -23,7 +23,7 @@ onMounted(() =>
     <li v-for="link in links" :key="link.id" class="pt-2">
       <NuxtLink
         :to="`#${link.id}`"
-        class="text-muted transition-all hover:text-primary"
+        class="text-muted-foreground transition-all hover:text-primary"
         :class="[activeHeadings.includes(link.id) && 'text-primary']"
       >
         {{ link.text }}

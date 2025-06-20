@@ -64,14 +64,14 @@ const path = computed(() => useRoute().path)
       :class="[config.aside.useLevel ? 'pt-4' : 'pt-1']"
     />
 
-    <div class="absolute inset-x-0 bottom-5 bg-base md:hidden">
+    <div class="absolute inset-x-0 bottom-5 bg-background md:hidden">
       <div class="flex items-center">
         <NButton
           v-for="(link, i) in config.header.links"
           :key="i"
           size="xs"
           btn="ghost-gray"
-          class="text-base"
+          class="text-foreground"
           v-bind="link"
           square
           icon

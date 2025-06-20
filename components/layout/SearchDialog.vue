@@ -125,16 +125,16 @@ function handleNavigate(delta: -1 | 1) {
 
               <span v-for="(subtitle, j) in item.titles" :key="`${subtitle}${j}`" class="flex shrink-0 self-center">
                 {{ subtitle }}
-                <Icon name="lucide:chevron-right" class="mx-0.5 self-center text-muted" />
+                <Icon name="lucide:chevron-right" class="text-muted-foreground mx-0.5 self-center" />
               </span>
               <span class="shrink-0 self-center">
                 {{ item.title }}
               </span>
-              <span class="ml-2 self-center truncate text-xs text-muted" v-html="getHighlightedContent(item.content)" />
+              <span class="text-muted-foreground ml-2 self-center truncate text-xs" v-html="getHighlightedContent(item.content)" />
             </NuxtLink>
           </div>
 
-          <div v-else class="pt-4 text-center text-muted">
+          <div v-else class="text-muted-foreground pt-4 text-center">
             No results found.
           </div>
         </CommonCommandList>

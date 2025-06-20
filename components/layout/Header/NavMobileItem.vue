@@ -35,7 +35,7 @@ watch(isOpen, (v) => {
               <div class="font-semibold">
                 {{ link.title }}
               </div>
-              <div class="text-sm text-muted">
+              <div class="text-muted-foreground text-sm">
                 {{ link.description }}
               </div>
             </NuxtLink>
@@ -46,6 +46,6 @@ watch(isOpen, (v) => {
   </template>
   <NuxtLink v-else :to="item.to" :target="item.target" class="w-full flex p-2">
     {{ item.title }}
-    <Icon name="lucide:arrow-up-right" class="ml-1 text-muted" size="12" />
+    <Icon name="lucide:arrow-up-right" class="text-muted-foreground ml-1" size="12" />
   </NuxtLink>
 </template>

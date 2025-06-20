@@ -18,7 +18,7 @@ defineProps<{
     <ProseH1>
       {{ title }}
     </ProseH1>
-    <p class="text-muted-foreground pt-1 text-lg">
+    <p class="text-muted-foreground-foreground pt-1 text-lg">
       {{ description }}
     </p>
 

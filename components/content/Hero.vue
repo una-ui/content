@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { NButtonProps } from '#una/types'
+
 defineProps<{
   announcement?: {
     to?: string
@@ -6,7 +8,7 @@ defineProps<{
     icon?: string
     title: string
   }
-  actions: any[]
+  actions: NButtonProps[]
 }>()
 </script>
 
@@ -17,11 +19,10 @@ defineProps<{
       :to="announcement.to"
       :target="announcement.target"
       rounded="lg"
-      btn="soft-accent"
+      btn="soft-secondary"
     >
       <template v-if="announcement.icon">
         <SmartIcon :name="announcement.icon" square="4" />
-        <NSeparator class="mx-2 h-4" orientation="vertical" />
       </template>
       <span class="sm:hidden">{{ announcement.title }}</span>
       <span class="hidden sm:inline">
@@ -33,7 +34,7 @@ defineProps<{
     <h1 class="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>
-    <span class="max-w-[750px] text-center text-lg text-muted sm:text-xl">
+    <span class="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </span>
 

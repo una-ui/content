@@ -14,7 +14,7 @@ actions:
   - label: Get Started
     to: /getting-started
   - label: GitHub
-    btn: 'solid-gray'
+    btn: 'outline-gray'
     to: https://github.com/una-ui/content
     leading: 'i-radix-icons-github-logo'
 ---

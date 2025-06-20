@@ -29,7 +29,7 @@ defineProps<{
     <h1 class="text-3xl font-bold leading-tight tracking-tighter md:text-4xl lg:leading-[1.1]">
       <ContentSlot :use="$slots.title" unwrap="p" />
     </h1>
-    <p class="max-w-2xl text-lg text-base font-light">
+    <p class="max-w-2xl text-lg text-foreground font-light">
       <ContentSlot :use="$slots.description" unwrap="p" />
     </p>
 
