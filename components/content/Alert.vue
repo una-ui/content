@@ -39,7 +39,7 @@ async function alertClick() {
 <template>
   <CommonAlert
     class="transition-all [&:not(:first-child)]:mt-5"
-    :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-$c-muted/50']"
+    :class="[typeTwClass[type], to && 'cursor-pointer hover:bg-muted/50']"
     @click="alertClick"
   >
     <SmartIcon v-if="icon && title" :name="icon" :size="16" />
