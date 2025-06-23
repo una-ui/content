@@ -17,10 +17,10 @@ const { fieldRequiredText } = useConfig().value.main
         <span class="text-md text-primary font-bold">
           {{ name }}
         </span>
-        <span v-if="required" class="text-muted-foreground text-sm font-mono">
+        <span v-if="required" class="text-sm text-muted-foreground font-mono">
           {{ fieldRequiredText }}
         </span>
-        <span class="text-muted-foreground ml-auto text-sm font-mono">
+        <span class="ml-auto text-sm text-muted-foreground font-mono">
           {{ type }}
         </span>
       </div>
@@ -30,7 +30,7 @@ const { fieldRequiredText } = useConfig().value.main
         </ProseCodeInline>
       </div>
     </div>
-    <span class="text-muted-foreground text-sm">
+    <span class="text-sm text-muted-foreground">
       <ContentSlot unwrap="p" />
       {{ description }}
     </span>
