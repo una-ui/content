@@ -23,7 +23,7 @@ const { nav } = useConfig().value.header
                   <div class="font-semibold">
                     {{ link.title }}
                   </div>
-                  <div class="text-muted-foreground text-sm">
+                  <div class="text-sm text-muted-foreground">
                     {{ link.description }}
                   </div>
                 </NuxtLink>
@@ -32,7 +32,7 @@ const { nav } = useConfig().value.header
           </CommonNavigationMenuContent>
         </template>
         <NuxtLink v-else :to="item.to" :target="item.target">
-          <NIcon name="lucide-arrow-up-right" class="text-muted-foreground absolute right-2 top-2" size="13" />
+          <NIcon name="lucide-arrow-up-right" class="absolute right-2 top-2 text-muted-foreground" size="13" />
           <div class="bg-transparent pr-6 font-semibold" :class="navigationMenuTriggerStyle()">
             {{ item.title }}
           </div>
