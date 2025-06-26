@@ -39,7 +39,7 @@ const links = computed(
         :level="0"
         :class="[links.length && 'border-b pb-5']"
       />
-      <div v-if="links" class="text-muted-foreground pt-5">
+      <div v-if="links" class="pt-5 text-muted-foreground">
         <NuxtLink
           v-for="(link, i) in links"
           :key="i"
@@ -52,7 +52,7 @@ const links = computed(
             class="mr-1 self-center"
           />
           {{ link.title }}
-          <Icon name="lucide:arrow-up-right" class="text-muted-foreground ml-auto self-center" size="13" />
+          <Icon name="lucide:arrow-up-right" class="ml-auto self-center text-muted-foreground" size="13" />
         </NuxtLink>
       </div>
     </CommonScrollArea>
