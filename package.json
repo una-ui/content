@@ -85,7 +85,7 @@
     "@unocss/extractor-mdc": "^66.2.3",
     "@vueuse/core": "^13.0.0",
     "eslint": "^9.21.0",
-    "shiki": "^2.5.0",
+    "shiki": "^3.0.0",
     "vue-tsc": "2.1.10"
   }
 }
