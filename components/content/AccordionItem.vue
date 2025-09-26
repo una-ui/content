@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useId } from 'radix-vue'
+import { useId } from 'reka-ui'
 
 defineProps<{
   value?: string

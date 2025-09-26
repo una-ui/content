@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useMagicKeys } from '@vueuse/core'
-import { VisuallyHidden } from 'radix-vue'
+import { VisuallyHidden } from 'reka-ui'
 
 const open = defineModel<boolean>('open', { default: false })
 const colorMode = useColorMode()
@@ -72,7 +72,7 @@ function handleNavigate(delta: -1 | 1) {
       <VisuallyHidden as-child>
         <CommonDialogDescription aria-describedby="undefined" />
       </VisuallyHidden>
-      <CommonCommand v-model:search-term="input" class="h-svh sm:h-[350px]">
+      <CommonCommand v-model="input" class="h-svh sm:h-[350px]">
         <CommonCommandInput
           :loading="searchLoading"
           :placeholder="placeholderDetailed"
@@ -116,7 +116,7 @@ function handleNavigate(delta: -1 | 1) {
               :id="i"
               :key="item.id"
               :to="item.id"
-              class="flex select-none rounded-md hover:bg-muted p-2 hover:cursor-pointer"
+              class="flex select-none rounded-md p-2 hover:cursor-pointer hover:bg-muted"
               :class="[i === activeSelect && 'bg-muted']"
               @click="open = false; activeSelect = i;"
             >
