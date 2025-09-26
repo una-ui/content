@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { AccordionContentProps } from 'radix-vue'
+import type { AccordionContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
-import { AccordionContent } from 'radix-vue'
+import { AccordionContent } from 'reka-ui'
 import { computed } from 'vue'
 import { cn } from '@/lib/utils'
 

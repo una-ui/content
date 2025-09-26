@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ToastCloseProps } from 'radix-vue'
+import type { ToastCloseProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
-import { ToastClose } from 'radix-vue'
+import { ToastClose } from 'reka-ui'
 import { computed } from 'vue'
 import { cn } from '@/lib/utils'
 
