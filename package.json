@@ -83,7 +83,7 @@
     "@unocss/core": "66.5.1",
     "@unocss/eslint-plugin": "^66.2.3",
     "@unocss/extractor-mdc": "^66.2.3",
-    "@vueuse/core": "^13.0.0",
+    "@vueuse/core": "^14.0.0",
     "eslint": "^9.21.0",
     "shiki": "^1.29.2",
     "vue-tsc": "2.1.10"
